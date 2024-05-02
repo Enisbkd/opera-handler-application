@@ -1,0 +1,905 @@
+{
+  "annotations": {
+    "changelogDate": "20240502082157"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "trxNo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "ftSubtype",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "invoiceCloseDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "arTransferDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "trxDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "businessDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "insertDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "updateDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "trnsActivityDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "approvalDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "postingDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "exchangeDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "routingDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "effectiveDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "customChargeDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "recptNo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "trxNoAdjust",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "trxNoAddedBy",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "trxNoAgainstPackage",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "trxNoHeader",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "arNumber",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "resvNameId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "cashierId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "creditCardId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "nameId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "tranActionId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "finDmlSeqNo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "routingInstrnId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "fromResvId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "genCashierId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "folioNo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "invoiceNo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "insertUser",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "updateUser",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "arrangementId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "trnsFromAcct",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "trnsToAcct",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "billNo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "revisionNo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "resvDepositId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "linkTrxNo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "authorizerId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "compLinkTrxNo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "mtrxNoAgainstPackage",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "forexCommPerc",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "forexCommAmount",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "articleId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "toResvNameId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "roomNts",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "orgArLedDebit",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "closureNo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "originalResvNameId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "orgBillNo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "membershipId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "installments",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "contractGuestDebit",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "contractGuestCredit",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "contractNetAmount",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "contractGrossAmount",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "postitNo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "ccTrxFeeAmount",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "changeDue",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "postingSourceNameId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "bonusCheckId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "roundLinkTrxno",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "reversePaymentTrxNo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "electronicVoucherNo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "thresholdDiversionId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "thresholdEntityQty",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "trxNoSplit",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "exchDiffTrxNo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "associatedTrxNo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "taxRate",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "propChargeId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "quantity",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "netAmount",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "grossAmount",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "cashierOpeningBalance",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "pricePerUnit",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "trxAmount",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "postedAmount",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "guestAccountCredit",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "exchangeRate",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "guestAccountDebit",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "cashierCredit",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "cashierDebit",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "packageCredit",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "packageDebit",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "depLedCredit",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "depLedDebit",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "revenueAmt",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "arLedCredit",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "arLedDebit",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "euroExchangeRate",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "inhDebit",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "inhCredit",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "packageAllowance",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "parallelGuestCredit",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "parallelGuestDebit",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "parallelNetAmount",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "parallelGrossAmount",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "orgPostedAmount",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "roomNtsEffective",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "paymentSurchargeAmt",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "folioView",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "taxInclusiveYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "deferredYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "indAdjustmentYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fixedChargesYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "taCommissionableYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "taxGeneratedYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "compressedYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "displayYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "collAgentPostingYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fiscalTrxCodeType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "deferredTaxesYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "advancedGenerateYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "forexType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "taCommissionNetYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sourceCommissionNetYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "settlementFlag",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accTypeFlag",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "profitLossFlag",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "proformaYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "holdYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "exchangeDifferenceYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "calcPointsYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "arChargeTransferYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "processed8300Yn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "asbFlag",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "postitYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "autoSettleYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "depTaxTransferedYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "autoCreditbillYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "asbOnlyPostTaxesOnceYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "roundFactorYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "depPostingFlag",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "correctionYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "routedYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "upsellChargeYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "advanceBillYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "advanceBillReversedYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "incTaxDeductedYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "gpAwardCancelledYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "serviceRecoveryAdjustmentYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "splitType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "bucketRedempYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "vatOffsetYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "forexTaxYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "stampDutyYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "covers",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "advGenerateAdjustment",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "expInvoiceType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "folioType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "orgFolioType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "invoiceType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "arState",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "exchangeType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "recptType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "roomClass",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "resort",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tcGroup",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tcSubgroup",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "trxCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "room",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tclCode1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "currency",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ftGeneratedType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tclCode2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "marketCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sourceCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "rateCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "hotelAcct",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "reasonCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "product",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "targetResort",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nameTaxType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "taxInvNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "approvalCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "approvalStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "compLinkTrxCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "compTypeCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "couponNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "originalRoom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "allowanceType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "advGenerateTrxCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "trxServiceType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "postingType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "parallelCurrency",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "contractCurrency",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fbaCertificateNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "postingRhythm",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "asbTaxFlag",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "packageArrangementCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "gpAwardCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "gpAwardCancelCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "serviceRecoveryDeptCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "bucketCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "taxRateType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "chequeNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "passerByName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "esignedReceiptName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "remark",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "reference",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "oTrxDesc",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "comments",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fiscalBillNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "extSysResultMsg",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "queueName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "paymentType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ccRefundPosting",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "thresholdEntityType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "thresholdTreatmentFlag",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "paymentSurchargeType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "propertyBillPrefix",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "taxElements",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "numberDialed",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "checkFileId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "extTrxId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "packageTrxType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "expOriginalInvoice",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "depositTransactionId",
+      "fieldType": "String"
+    }
+  ],
+  "name": "FinancialTransactions",
+  "pagination": "pagination",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

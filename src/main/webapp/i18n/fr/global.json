@@ -7,7 +7,20 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entités",
-        "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
+        "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)",
+        "applicationUser": "Application User",
+        "financialTransactions": "Financial Transactions",
+        "nameAddress": "Name Address",
+        "namePhone": "Name Phone",
+        "reservationSummary": "Reservation Summary",
+        "reservationDailyElements": "Reservation Daily Elements",
+        "reservationDailyElementName": "Reservation Daily Element Name",
+        "reservationStatDaily": "Reservation Stat Daily",
+        "resort": "Resort",
+        "resortOriginsOfBooking": "Resort Origins Of Booking",
+        "resortRoomCategory": "Resort Room Category",
+        "reservationName": "Reservation Name",
+        "name": "Name"
       },
       "account": {
         "main": "Compte",

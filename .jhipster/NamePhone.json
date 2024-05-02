@@ -1,0 +1,133 @@
+{
+  "annotations": {
+    "changelogDate": "20240502082159"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "phoneId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "nameId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "phoneType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "phoneRole",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "phoneNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "insertDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "insertUser",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "updateDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "updateUser",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "inactiveDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "endDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "beginDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "addressId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "primaryYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "displaySeq",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "laptopChange",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "indexPhone",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "extension",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "emailFormat",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "shareEmailYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "defaultConfirmationYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "emailLanguage",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mobileAudioKeyYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "countryDialingCode",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "validYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "phoneCountryCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "chainCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "validateDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "validateStatus",
+      "fieldType": "String"
+    }
+  ],
+  "name": "NamePhone",
+  "pagination": "pagination",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

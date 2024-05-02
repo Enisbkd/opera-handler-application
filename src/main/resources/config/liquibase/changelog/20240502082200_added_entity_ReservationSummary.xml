@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <!--
+        Added the entity ReservationSummary.
+    -->
+    <changeSet id="20240502082200-1" author="jhipster">
+        <createTable tableName="reservation_summary">
+            <column name="id" type="integer">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="resort" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="event_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="event_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="considered_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="room_category" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="room_class" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="market_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="source_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="rate_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="region_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="group_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="resv_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="resv_inv_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="psuedo_room_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="arr_rooms" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="adults" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="children" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="dep_rooms" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="no_rooms" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="gross_rate" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="net_room_revenue" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="extra_revenue" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="oo_rooms" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="os_rooms" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="remaining_block_rooms" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="pickedup_block_rooms" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="single_occupancy" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="multiple_occupancy" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="block_status" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="arr_persons" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="dep_persons" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="wl_rooms" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="wl_persons" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="day_use_rooms" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="day_use_persons" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="booking_status" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="resv_status" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="day_use_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="channel" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="country" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="nationality" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="cribs" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="extra_beds" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="adults_tax_free" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="children_tax_free" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="rate_category" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="rate_class" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="room_revenue" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="food_revenue" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="other_revenue" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="total_revenue" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="non_revenue" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="allotment_header_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="room_revenue_tax" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="food_revenue_tax" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="other_revenue_tax" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="total_revenue_tax" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="non_revenue_tax" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="city" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="zip_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="district" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="state" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="children_1" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="children_2" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="children_3" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="children_4" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="children_5" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="owner_ff_flag" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="owner_rental_flag" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="fc_gross_rate" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="fc_net_room_revenue" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="fc_extra_revenue" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="fc_room_revenue" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="fc_food_revenue" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="fc_other_revenue" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="fc_total_revenue" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="fc_non_revenue" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="fc_room_revenue_tax" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="fc_food_revenue_tax" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="fc_other_revenue_tax" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="fc_total_revenue_tax" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="fc_non_revenue_tax" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="currency_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="exchange_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="update_business_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="update_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="central_currency_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="central_exchange_rate" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="trunc_begin_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="trunc_end_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="business_date_created" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="res_insert_source" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="parent_company_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="agent_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="gender" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="vip_status" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="quantity" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="turndown_status" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="booked_room_category" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="source_prof_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
+        </createTable>
+    </changeSet>
+
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here -->
+
+    <!--
+        Load sample data generated with Faker.js
+        - This data can be easily edited using a CSV editor (or even MS Excel) and
+          is located in the 'src/main/resources/config/liquibase/fake-data' directory
+        - By default this data is applied when running with the JHipster 'dev' profile.
+          This can be customized by adding or removing 'faker' in the 'spring.liquibase.contexts'
+          Spring Boot configuration key.
+    -->
+    <changeSet id="20240502082200-1-data" author="jhipster" context="faker">
+        <loadData
+                  file="config/liquibase/fake-data/reservation_summary.csv"
+                  separator=";"
+                  tableName="reservation_summary"
+                  usePreparedStatements="true">
+            <column name="id" type="numeric"/>
+            <column name="resort" type="string"/>
+            <column name="event_type" type="string"/>
+            <column name="event_id" type="string"/>
+            <column name="considered_date" type="date"/>
+            <column name="room_category" type="string"/>
+            <column name="room_class" type="string"/>
+            <column name="market_code" type="string"/>
+            <column name="source_code" type="string"/>
+            <column name="rate_code" type="string"/>
+            <column name="region_code" type="string"/>
+            <column name="group_id" type="numeric"/>
+            <column name="resv_type" type="string"/>
+            <column name="resv_inv_type" type="string"/>
+            <column name="psuedo_room_yn" type="string"/>
+            <column name="arr_rooms" type="numeric"/>
+            <column name="adults" type="numeric"/>
+            <column name="children" type="numeric"/>
+            <column name="dep_rooms" type="numeric"/>
+            <column name="no_rooms" type="numeric"/>
+            <column name="gross_rate" type="numeric"/>
+            <column name="net_room_revenue" type="numeric"/>
+            <column name="extra_revenue" type="numeric"/>
+            <column name="oo_rooms" type="numeric"/>
+            <column name="os_rooms" type="numeric"/>
+            <column name="remaining_block_rooms" type="numeric"/>
+            <column name="pickedup_block_rooms" type="numeric"/>
+            <column name="single_occupancy" type="numeric"/>
+            <column name="multiple_occupancy" type="numeric"/>
+            <column name="block_status" type="string"/>
+            <column name="arr_persons" type="numeric"/>
+            <column name="dep_persons" type="numeric"/>
+            <column name="wl_rooms" type="numeric"/>
+            <column name="wl_persons" type="numeric"/>
+            <column name="day_use_rooms" type="numeric"/>
+            <column name="day_use_persons" type="numeric"/>
+            <column name="booking_status" type="string"/>
+            <column name="resv_status" type="string"/>
+            <column name="day_use_yn" type="string"/>
+            <column name="channel" type="string"/>
+            <column name="country" type="string"/>
+            <column name="nationality" type="string"/>
+            <column name="cribs" type="numeric"/>
+            <column name="extra_beds" type="numeric"/>
+            <column name="adults_tax_free" type="numeric"/>
+            <column name="children_tax_free" type="numeric"/>
+            <column name="rate_category" type="string"/>
+            <column name="rate_class" type="string"/>
+            <column name="room_revenue" type="numeric"/>
+            <column name="food_revenue" type="numeric"/>
+            <column name="other_revenue" type="numeric"/>
+            <column name="total_revenue" type="numeric"/>
+            <column name="non_revenue" type="numeric"/>
+            <column name="allotment_header_id" type="numeric"/>
+            <column name="room_revenue_tax" type="numeric"/>
+            <column name="food_revenue_tax" type="numeric"/>
+            <column name="other_revenue_tax" type="numeric"/>
+            <column name="total_revenue_tax" type="numeric"/>
+            <column name="non_revenue_tax" type="numeric"/>
+            <column name="city" type="string"/>
+            <column name="zip_code" type="string"/>
+            <column name="district" type="string"/>
+            <column name="state" type="string"/>
+            <column name="children_1" type="numeric"/>
+            <column name="children_2" type="numeric"/>
+            <column name="children_3" type="numeric"/>
+            <column name="children_4" type="numeric"/>
+            <column name="children_5" type="numeric"/>
+            <column name="owner_ff_flag" type="string"/>
+            <column name="owner_rental_flag" type="string"/>
+            <column name="fc_gross_rate" type="numeric"/>
+            <column name="fc_net_room_revenue" type="numeric"/>
+            <column name="fc_extra_revenue" type="numeric"/>
+            <column name="fc_room_revenue" type="numeric"/>
+            <column name="fc_food_revenue" type="numeric"/>
+            <column name="fc_other_revenue" type="numeric"/>
+            <column name="fc_total_revenue" type="numeric"/>
+            <column name="fc_non_revenue" type="numeric"/>
+            <column name="fc_room_revenue_tax" type="numeric"/>
+            <column name="fc_food_revenue_tax" type="numeric"/>
+            <column name="fc_other_revenue_tax" type="numeric"/>
+            <column name="fc_total_revenue_tax" type="numeric"/>
+            <column name="fc_non_revenue_tax" type="numeric"/>
+            <column name="currency_code" type="string"/>
+            <column name="exchange_date" type="date"/>
+            <column name="update_business_date" type="date"/>
+            <column name="update_date" type="date"/>
+            <column name="central_currency_code" type="string"/>
+            <column name="central_exchange_rate" type="numeric"/>
+            <column name="trunc_begin_date" type="date"/>
+            <column name="trunc_end_date" type="date"/>
+            <column name="business_date_created" type="date"/>
+            <column name="res_insert_source" type="string"/>
+            <column name="parent_company_id" type="numeric"/>
+            <column name="agent_id" type="numeric"/>
+            <column name="gender" type="string"/>
+            <column name="vip_status" type="string"/>
+            <column name="quantity" type="numeric"/>
+            <column name="turndown_status" type="string"/>
+            <column name="booked_room_category" type="string"/>
+            <column name="source_prof_id" type="numeric"/>
+            <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
+        </loadData>
+    </changeSet>
+</databaseChangeLog>

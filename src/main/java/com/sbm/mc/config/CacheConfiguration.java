@@ -50,6 +50,19 @@ public class CacheConfiguration {
             createCache(cm, com.sbm.mc.domain.User.class.getName());
             createCache(cm, com.sbm.mc.domain.Authority.class.getName());
             createCache(cm, com.sbm.mc.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.sbm.mc.domain.ApplicationUser.class.getName());
+            createCache(cm, com.sbm.mc.domain.FinancialTransactions.class.getName());
+            createCache(cm, com.sbm.mc.domain.NameAddress.class.getName());
+            createCache(cm, com.sbm.mc.domain.NamePhone.class.getName());
+            createCache(cm, com.sbm.mc.domain.ReservationSummary.class.getName());
+            createCache(cm, com.sbm.mc.domain.ReservationDailyElements.class.getName());
+            createCache(cm, com.sbm.mc.domain.ReservationDailyElementName.class.getName());
+            createCache(cm, com.sbm.mc.domain.ReservationStatDaily.class.getName());
+            createCache(cm, com.sbm.mc.domain.Resort.class.getName());
+            createCache(cm, com.sbm.mc.domain.ResortOriginsOfBooking.class.getName());
+            createCache(cm, com.sbm.mc.domain.ResortRoomCategory.class.getName());
+            createCache(cm, com.sbm.mc.domain.ReservationName.class.getName());
+            createCache(cm, com.sbm.mc.domain.Name.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

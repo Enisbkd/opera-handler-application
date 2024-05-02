@@ -1,0 +1,1181 @@
+{
+  "annotations": {
+    "changelogDate": "20240502082207"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "resort",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "resvNameId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "nameId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "nameUsageType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "contactNameId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "insertDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "insertUser",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "updateUser",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "updateDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "resvStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "commissionCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "addressId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "phoneId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "faxYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mailYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "printRateYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "reportId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "resvNo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "confirmationNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "beginDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "endDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "faxId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "emailId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "emailYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "consumerYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "creditCardId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "financiallyResponsibleYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "paymentMethod",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "intermediaryYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "postingAllowedYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "displayColor",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "actualCheckInDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "truncActualCheckInDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "actualCheckOutDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "truncActualCheckOutDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "creditLimit",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "authorizedBy",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "parentResvNameId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "cancellationNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cancellationReasonCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cancellationReasonDesc",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "arrivalTransportType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "arrivalStationCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "arrivalCarrierCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "arrivalTransportCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "arrivalDateTime",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "arrivalEstimateTime",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "arrivalTranportationYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "arrivalComments",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "departureTransportType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "departureStationCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "departureCarrierCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "departureTransportCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "departureDateTime",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "departureEstimateTime",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "departureTransportationYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "departureComments",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cancellationDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "guaranteeCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "wlReasonDescription",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "wlReasonCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "wlPriority",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "doNotMoveRoom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "externalReference",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "partyCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "walkinYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "originalEndDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "approvalAmountCalcMethod",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "amountPercent",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "nameTaxType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "taxExemptNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "roomFeatures",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "wlTelephoneNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "videoCheckoutYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "discountAmt",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "discountPrcnt",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "discountReasonCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "commissionPaid",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "commissionHoldCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "truncBeginDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "truncEndDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "sguestName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "membershipId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfc01",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc02",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc03",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc04",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc05",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc06",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc07",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc08",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc09",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc10",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc11",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc12",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc13",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc14",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc15",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc16",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc17",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc18",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc19",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc20",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc21",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc22",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc23",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc24",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc25",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc26",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc27",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc28",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc29",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc30",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc31",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc32",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc33",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc34",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc35",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc36",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc37",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc38",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc39",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc40",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfn01",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn02",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn03",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn04",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn05",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn06",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn07",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn08",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn09",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn10",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn11",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn12",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn13",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn14",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn15",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn16",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn17",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn18",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn19",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn20",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn21",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn22",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn23",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn24",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn25",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn26",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn27",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn28",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn29",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn30",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn31",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn32",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn33",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn34",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn35",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn36",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn37",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn38",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn39",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn40",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfd01",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "udfd02",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "udfd03",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "udfd04",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "udfd05",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "udfd06",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "udfd07",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "udfd08",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "udfd09",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "udfd10",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "insertActionInstanceId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "dmlSeqNo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "businessDateCreated",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "turndownYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "roomInstructions",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "roomServiceTime",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "eventId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "revenueTypeCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "hurdle",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "hurdleOverride",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "rateableValue",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "restrictionOverride",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "yieldableYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sguestFirstname",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "guestLastName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "guestFirstName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "guestLastNameSdx",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "guestFirstNameSdx",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "channel",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "shareSeqNo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "guestSignature",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "extensionId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "resvContactId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "billingContactId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "resInsertSource",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "resInsertSourceType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "masterShare",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "registrationCardNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tiad",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "purposeOfStay",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "reinstateDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "purgeDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "lastSettleDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "lastPeriodicFolioDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "periodicFolioFreq",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "confirmationLegNo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "guestStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "guestType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "checkinDuration",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "authorizerId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "lastOnlinePrintSeq",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "entryPoint",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "entryDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "pseudoMemType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "pseudoMemTotalPoints",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "folioText1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "folioText2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "compTypeCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "uniCardId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "expCheckinresId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "originalBeginDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "ownerFfFlag",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "commissionPayoutTo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "preChargingYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "postChargingYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "postCoFlag",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "folioCloseDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "scheduleCheckoutYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "customReference",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "guaranteeCodePreCi",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "awardMembershipId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "esignedRegCardName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "statisticalRoomType",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "statisticalRateTier",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "ymCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "keyValidUntil",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "preRegisteredYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "taxRegistrationNo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "visaNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "visaIssueDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "visaExpirationDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "taxNoOfStays",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "asbProratedYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "autoSettleDays",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "autoSettleYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "splitFromResvNameId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "nextDestination",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateOfArrivalInCountry",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "preArrReviewedDt",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "preArrReviewedUser",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "bonusCheckId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "mobileAudioKeyYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "directBillVerifyResponse",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "addresseeNameId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "superSearchIndexText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "autoCheckinYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "emailFolioYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "emailAddress",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "spgUpgradeConfirmedRoomtype",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "spgUpgradeReasonCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "spgSuiteNightAwardStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "spgDiscloseRoomTypeYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "amenityEligibleYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "amenityLevelCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "baseRateCurrencyCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "baseRateCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "localBaseRateAmount",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "phoneDisplayNameYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "resortChargeNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mobileChkoutAllowed",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mobileViewFolioAllowed",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "hkExpectedServiceTime",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "eligibleForUpgradeYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "beginSystemDateTime",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "mobileCheckinAllowedYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "quoteId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "manualCheckoutStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mobilePreferredCurrency",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mobileActionAlertIssued",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "externalEfolioYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "optInBatchFolYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "folioAddrElementId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "operaEsignedRegCardYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "resvGuid",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "advanceCheckedInYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "expectedTimeOfReturn",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "etrComments",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "optedForCommYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "creditLimitAutoPayAllowYn",
+      "fieldType": "String"
+    }
+  ],
+  "name": "ReservationName",
+  "pagination": "pagination",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

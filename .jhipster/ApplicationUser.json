@@ -1,0 +1,493 @@
+{
+  "annotations": {
+    "changelogDate": "20240502082156"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "appUserId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "appUser",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "appPassword",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "insertDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "insertUser",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "updateDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "updateUser",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "oracleUid",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "oracleUser",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "oraclePassword",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "inactiveDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "defaultForm",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "appUserType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lastLoggedResort",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "defCashierId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "appUserDescription",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "personNameId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "disabledUntil",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "expiresOn",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "lastLoggedTimestamp",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "isSuperuser",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "employeeNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "generalFilepath",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "userFilepath",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "defaultResort",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "maxUserSessions",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "internalYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "maxCheckoutDays",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "defaultTerminal",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "defaultLanguage",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "deptId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "maleFemale",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "userPbxId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "dateHired",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "workPermitNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "workPermitExpdate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "rateType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salaryInterval",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "hourlyRate",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "weeklySalary",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "otMultiplier",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "hireType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "rehireYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "empExtension",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "empPager",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "termReason",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "terminatedDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "inactiveReasonCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "inactiveFrom",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "inactiveTo",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "weekMin",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "weekMax",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "mondayMin",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "mondayMax",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "tuesdayMin",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "tuesdayMax",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "wednesdayMin",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "wednesdayMax",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "thursdayMin",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "thursdayMax",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "fridayMin",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "fridayMax",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "saturdayMin",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "saturdayMax",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "sundayMin",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "sundayMax",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "comments",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "leadAddress",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "leadComm",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "leadAddressDet",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "laptopId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "hoursPerWeek",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "empStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "passwordLastChange",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "passwordChangeDays",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "graceLogin",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "srepGroup",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "defaultReportgroup",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "authorizerYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "authorizerInactiveDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "sfaName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "loginCro",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "authorizerRateCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "loginDomain",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "receiveBroadcastMsg",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "defaultMfnResort",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mfnUserType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "forcePasswordChangeYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accountLockedOutYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "preventAccountLockout",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lockoutDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "accessPms",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accessSc",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accessConfig",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accessEod",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accessUtil",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accessOrs",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accessSfa",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accessOcis",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accessOcm",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accessOxi",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accessOxihub",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "chainCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "appUserUniq",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "maxDaysAfterCo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "userGroupAdmin",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accessOrms",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accessObi",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "srepCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "loginAttempts",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "propertyAccessYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accessScbi",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "timezoneRegion",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accessOcrm",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "employeeIncentiveNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "serviceRequestAlertsYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mobileAlertsYn",
+      "fieldType": "String"
+    }
+  ],
+  "name": "ApplicationUser",
+  "pagination": "pagination",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

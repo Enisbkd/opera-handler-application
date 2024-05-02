@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <!--
+        Added the entity FinancialTransactions.
+    -->
+    <changeSet id="20240502082157-1" author="jhipster">
+        <createTable tableName="financial_transactions">
+            <column name="id" type="integer">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="trx_no" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="ft_subtype" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="invoice_close_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="ar_transfer_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="trx_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="business_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="insert_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="update_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="trns_activity_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="approval_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="posting_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="exchange_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="routing_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="effective_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="custom_charge_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="recpt_no" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="trx_no_adjust" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="trx_no_added_by" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="trx_no_against_package" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="trx_no_header" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="ar_number" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="resv_name_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="cashier_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="credit_card_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="name_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="tran_action_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="fin_dml_seq_no" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="routing_instrn_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="from_resv_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="gen_cashier_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="folio_no" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="invoice_no" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="insert_user" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="update_user" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="arrangement_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="trns_from_acct" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="trns_to_acct" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="bill_no" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="revision_no" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="resv_deposit_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="link_trx_no" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="authorizer_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="comp_link_trx_no" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="mtrx_no_against_package" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="forex_comm_perc" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="forex_comm_amount" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="article_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="to_resv_name_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="room_nts" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="org_ar_led_debit" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="closure_no" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="original_resv_name_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="org_bill_no" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="membership_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="installments" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="contract_guest_debit" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="contract_guest_credit" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="contract_net_amount" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="contract_gross_amount" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="postit_no" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="cc_trx_fee_amount" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="change_due" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="posting_source_name_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="bonus_check_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="round_link_trxno" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="reverse_payment_trx_no" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="electronic_voucher_no" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="threshold_diversion_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="threshold_entity_qty" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="trx_no_split" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="exch_diff_trx_no" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="associated_trx_no" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="tax_rate" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="prop_charge_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="quantity" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="net_amount" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="gross_amount" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="cashier_opening_balance" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="price_per_unit" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="trx_amount" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="posted_amount" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="guest_account_credit" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="exchange_rate" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="guest_account_debit" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="cashier_credit" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="cashier_debit" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="package_credit" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="package_debit" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="dep_led_credit" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="dep_led_debit" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="revenue_amt" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ar_led_credit" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ar_led_debit" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="euro_exchange_rate" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="inh_debit" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="inh_credit" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="package_allowance" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="parallel_guest_credit" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="parallel_guest_debit" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="parallel_net_amount" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="parallel_gross_amount" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="org_posted_amount" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="room_nts_effective" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="payment_surcharge_amt" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="folio_view" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="tax_inclusive_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="deferred_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ind_adjustment_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="fixed_charges_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ta_commissionable_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tax_generated_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="compressed_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="display_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="coll_agent_posting_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="fiscal_trx_code_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="deferred_taxes_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="advanced_generate_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="forex_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ta_commission_net_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="source_commission_net_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="settlement_flag" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="acc_type_flag" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="profit_loss_flag" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="proforma_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="hold_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="exchange_difference_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="calc_points_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ar_charge_transfer_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="processed_8300_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="asb_flag" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="postit_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="auto_settle_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="dep_tax_transfered_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="auto_creditbill_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="asb_only_post_taxes_once_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="round_factor_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="dep_posting_flag" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="correction_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="routed_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="upsell_charge_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="advance_bill_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="advance_bill_reversed_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="inc_tax_deducted_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="gp_award_cancelled_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="service_recovery_adjustment_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="split_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="bucket_redemp_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="vat_offset_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="forex_tax_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="stamp_duty_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="covers" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="adv_generate_adjustment" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="exp_invoice_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="folio_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="org_folio_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="invoice_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ar_state" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="exchange_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="recpt_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="room_class" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="resort" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tc_group" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tc_subgroup" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="trx_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="room" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tcl_code_1" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="currency" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ft_generated_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tcl_code_2" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="market_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="source_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="rate_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="hotel_acct" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="reason_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="product" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="target_resort" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="name_tax_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tax_inv_no" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="approval_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="approval_status" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="comp_link_trx_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="comp_type_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="coupon_no" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="original_room" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="allowance_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="adv_generate_trx_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="trx_service_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="posting_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="parallel_currency" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="contract_currency" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="fba_certificate_number" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="posting_rhythm" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="asb_tax_flag" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="package_arrangement_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="gp_award_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="gp_award_cancel_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="service_recovery_dept_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="bucket_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tax_rate_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="cheque_number" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="passer_by_name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="esigned_receipt_name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="remark" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="reference" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="o_trx_desc" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="comments" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="fiscal_bill_no" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ext_sys_result_msg" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="queue_name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="payment_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="cc_refund_posting" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="threshold_entity_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="threshold_treatment_flag" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="payment_surcharge_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="property_bill_prefix" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tax_elements" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="number_dialed" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="check_file_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ext_trx_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="package_trx_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="exp_original_invoice" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="deposit_transaction_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
+        </createTable>
+    </changeSet>
+
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here -->
+
+    <!--
+        Load sample data generated with Faker.js
+        - This data can be easily edited using a CSV editor (or even MS Excel) and
+          is located in the 'src/main/resources/config/liquibase/fake-data' directory
+        - By default this data is applied when running with the JHipster 'dev' profile.
+          This can be customized by adding or removing 'faker' in the 'spring.liquibase.contexts'
+          Spring Boot configuration key.
+    -->
+    <changeSet id="20240502082157-1-data" author="jhipster" context="faker">
+        <loadData
+                  file="config/liquibase/fake-data/financial_transactions.csv"
+                  separator=";"
+                  tableName="financial_transactions"
+                  usePreparedStatements="true">
+            <column name="id" type="numeric"/>
+            <column name="trx_no" type="numeric"/>
+            <column name="ft_subtype" type="string"/>
+            <column name="invoice_close_date" type="date"/>
+            <column name="ar_transfer_date" type="date"/>
+            <column name="trx_date" type="date"/>
+            <column name="business_date" type="date"/>
+            <column name="insert_date" type="date"/>
+            <column name="update_date" type="date"/>
+            <column name="trns_activity_date" type="date"/>
+            <column name="approval_date" type="date"/>
+            <column name="posting_date" type="date"/>
+            <column name="exchange_date" type="date"/>
+            <column name="routing_date" type="date"/>
+            <column name="effective_date" type="date"/>
+            <column name="custom_charge_date" type="date"/>
+            <column name="recpt_no" type="numeric"/>
+            <column name="trx_no_adjust" type="numeric"/>
+            <column name="trx_no_added_by" type="numeric"/>
+            <column name="trx_no_against_package" type="numeric"/>
+            <column name="trx_no_header" type="numeric"/>
+            <column name="ar_number" type="numeric"/>
+            <column name="resv_name_id" type="numeric"/>
+            <column name="cashier_id" type="numeric"/>
+            <column name="credit_card_id" type="numeric"/>
+            <column name="name_id" type="numeric"/>
+            <column name="tran_action_id" type="numeric"/>
+            <column name="fin_dml_seq_no" type="numeric"/>
+            <column name="routing_instrn_id" type="numeric"/>
+            <column name="from_resv_id" type="numeric"/>
+            <column name="gen_cashier_id" type="numeric"/>
+            <column name="folio_no" type="numeric"/>
+            <column name="invoice_no" type="numeric"/>
+            <column name="insert_user" type="numeric"/>
+            <column name="update_user" type="numeric"/>
+            <column name="arrangement_id" type="numeric"/>
+            <column name="trns_from_acct" type="numeric"/>
+            <column name="trns_to_acct" type="numeric"/>
+            <column name="bill_no" type="numeric"/>
+            <column name="revision_no" type="numeric"/>
+            <column name="resv_deposit_id" type="numeric"/>
+            <column name="link_trx_no" type="numeric"/>
+            <column name="authorizer_id" type="numeric"/>
+            <column name="comp_link_trx_no" type="numeric"/>
+            <column name="mtrx_no_against_package" type="numeric"/>
+            <column name="forex_comm_perc" type="numeric"/>
+            <column name="forex_comm_amount" type="numeric"/>
+            <column name="article_id" type="numeric"/>
+            <column name="to_resv_name_id" type="numeric"/>
+            <column name="room_nts" type="numeric"/>
+            <column name="org_ar_led_debit" type="numeric"/>
+            <column name="closure_no" type="numeric"/>
+            <column name="original_resv_name_id" type="numeric"/>
+            <column name="org_bill_no" type="numeric"/>
+            <column name="membership_id" type="numeric"/>
+            <column name="installments" type="numeric"/>
+            <column name="contract_guest_debit" type="numeric"/>
+            <column name="contract_guest_credit" type="numeric"/>
+            <column name="contract_net_amount" type="numeric"/>
+            <column name="contract_gross_amount" type="numeric"/>
+            <column name="postit_no" type="numeric"/>
+            <column name="cc_trx_fee_amount" type="numeric"/>
+            <column name="change_due" type="numeric"/>
+            <column name="posting_source_name_id" type="numeric"/>
+            <column name="bonus_check_id" type="numeric"/>
+            <column name="round_link_trxno" type="numeric"/>
+            <column name="reverse_payment_trx_no" type="numeric"/>
+            <column name="electronic_voucher_no" type="numeric"/>
+            <column name="threshold_diversion_id" type="numeric"/>
+            <column name="threshold_entity_qty" type="numeric"/>
+            <column name="trx_no_split" type="numeric"/>
+            <column name="exch_diff_trx_no" type="numeric"/>
+            <column name="associated_trx_no" type="numeric"/>
+            <column name="tax_rate" type="numeric"/>
+            <column name="prop_charge_id" type="numeric"/>
+            <column name="quantity" type="numeric"/>
+            <column name="net_amount" type="numeric"/>
+            <column name="gross_amount" type="numeric"/>
+            <column name="cashier_opening_balance" type="numeric"/>
+            <column name="price_per_unit" type="numeric"/>
+            <column name="trx_amount" type="numeric"/>
+            <column name="posted_amount" type="numeric"/>
+            <column name="guest_account_credit" type="numeric"/>
+            <column name="exchange_rate" type="numeric"/>
+            <column name="guest_account_debit" type="numeric"/>
+            <column name="cashier_credit" type="numeric"/>
+            <column name="cashier_debit" type="numeric"/>
+            <column name="package_credit" type="numeric"/>
+            <column name="package_debit" type="numeric"/>
+            <column name="dep_led_credit" type="numeric"/>
+            <column name="dep_led_debit" type="numeric"/>
+            <column name="revenue_amt" type="numeric"/>
+            <column name="ar_led_credit" type="numeric"/>
+            <column name="ar_led_debit" type="numeric"/>
+            <column name="euro_exchange_rate" type="numeric"/>
+            <column name="inh_debit" type="numeric"/>
+            <column name="inh_credit" type="numeric"/>
+            <column name="package_allowance" type="numeric"/>
+            <column name="parallel_guest_credit" type="numeric"/>
+            <column name="parallel_guest_debit" type="numeric"/>
+            <column name="parallel_net_amount" type="numeric"/>
+            <column name="parallel_gross_amount" type="numeric"/>
+            <column name="org_posted_amount" type="numeric"/>
+            <column name="room_nts_effective" type="numeric"/>
+            <column name="payment_surcharge_amt" type="numeric"/>
+            <column name="folio_view" type="numeric"/>
+            <column name="tax_inclusive_yn" type="string"/>
+            <column name="deferred_yn" type="string"/>
+            <column name="ind_adjustment_yn" type="string"/>
+            <column name="fixed_charges_yn" type="string"/>
+            <column name="ta_commissionable_yn" type="string"/>
+            <column name="tax_generated_yn" type="string"/>
+            <column name="compressed_yn" type="string"/>
+            <column name="display_yn" type="string"/>
+            <column name="coll_agent_posting_yn" type="string"/>
+            <column name="fiscal_trx_code_type" type="string"/>
+            <column name="deferred_taxes_yn" type="string"/>
+            <column name="advanced_generate_yn" type="string"/>
+            <column name="forex_type" type="string"/>
+            <column name="ta_commission_net_yn" type="string"/>
+            <column name="source_commission_net_yn" type="string"/>
+            <column name="settlement_flag" type="string"/>
+            <column name="acc_type_flag" type="string"/>
+            <column name="profit_loss_flag" type="string"/>
+            <column name="proforma_yn" type="string"/>
+            <column name="hold_yn" type="string"/>
+            <column name="exchange_difference_yn" type="string"/>
+            <column name="calc_points_yn" type="string"/>
+            <column name="ar_charge_transfer_yn" type="string"/>
+            <column name="processed_8300_yn" type="string"/>
+            <column name="asb_flag" type="string"/>
+            <column name="postit_yn" type="string"/>
+            <column name="auto_settle_yn" type="string"/>
+            <column name="dep_tax_transfered_yn" type="string"/>
+            <column name="auto_creditbill_yn" type="string"/>
+            <column name="asb_only_post_taxes_once_yn" type="string"/>
+            <column name="round_factor_yn" type="string"/>
+            <column name="dep_posting_flag" type="string"/>
+            <column name="correction_yn" type="string"/>
+            <column name="routed_yn" type="string"/>
+            <column name="upsell_charge_yn" type="string"/>
+            <column name="advance_bill_yn" type="string"/>
+            <column name="advance_bill_reversed_yn" type="string"/>
+            <column name="inc_tax_deducted_yn" type="string"/>
+            <column name="gp_award_cancelled_yn" type="string"/>
+            <column name="service_recovery_adjustment_yn" type="string"/>
+            <column name="split_type" type="string"/>
+            <column name="bucket_redemp_yn" type="string"/>
+            <column name="vat_offset_yn" type="string"/>
+            <column name="forex_tax_yn" type="string"/>
+            <column name="stamp_duty_yn" type="string"/>
+            <column name="covers" type="string"/>
+            <column name="adv_generate_adjustment" type="string"/>
+            <column name="exp_invoice_type" type="string"/>
+            <column name="folio_type" type="string"/>
+            <column name="org_folio_type" type="string"/>
+            <column name="invoice_type" type="string"/>
+            <column name="ar_state" type="string"/>
+            <column name="exchange_type" type="string"/>
+            <column name="recpt_type" type="string"/>
+            <column name="room_class" type="string"/>
+            <column name="resort" type="string"/>
+            <column name="tc_group" type="string"/>
+            <column name="tc_subgroup" type="string"/>
+            <column name="trx_code" type="string"/>
+            <column name="room" type="string"/>
+            <column name="tcl_code_1" type="string"/>
+            <column name="currency" type="string"/>
+            <column name="ft_generated_type" type="string"/>
+            <column name="tcl_code_2" type="string"/>
+            <column name="market_code" type="string"/>
+            <column name="source_code" type="string"/>
+            <column name="rate_code" type="string"/>
+            <column name="hotel_acct" type="string"/>
+            <column name="reason_code" type="string"/>
+            <column name="product" type="string"/>
+            <column name="target_resort" type="string"/>
+            <column name="name_tax_type" type="string"/>
+            <column name="tax_inv_no" type="string"/>
+            <column name="approval_code" type="string"/>
+            <column name="approval_status" type="string"/>
+            <column name="comp_link_trx_code" type="string"/>
+            <column name="comp_type_code" type="string"/>
+            <column name="coupon_no" type="string"/>
+            <column name="original_room" type="string"/>
+            <column name="allowance_type" type="string"/>
+            <column name="adv_generate_trx_code" type="string"/>
+            <column name="trx_service_type" type="string"/>
+            <column name="posting_type" type="string"/>
+            <column name="parallel_currency" type="string"/>
+            <column name="contract_currency" type="string"/>
+            <column name="fba_certificate_number" type="string"/>
+            <column name="posting_rhythm" type="string"/>
+            <column name="asb_tax_flag" type="string"/>
+            <column name="package_arrangement_code" type="string"/>
+            <column name="gp_award_code" type="string"/>
+            <column name="gp_award_cancel_code" type="string"/>
+            <column name="service_recovery_dept_code" type="string"/>
+            <column name="bucket_code" type="string"/>
+            <column name="tax_rate_type" type="string"/>
+            <column name="cheque_number" type="string"/>
+            <column name="passer_by_name" type="string"/>
+            <column name="esigned_receipt_name" type="string"/>
+            <column name="remark" type="string"/>
+            <column name="reference" type="string"/>
+            <column name="o_trx_desc" type="string"/>
+            <column name="comments" type="string"/>
+            <column name="fiscal_bill_no" type="string"/>
+            <column name="ext_sys_result_msg" type="string"/>
+            <column name="queue_name" type="string"/>
+            <column name="payment_type" type="string"/>
+            <column name="cc_refund_posting" type="string"/>
+            <column name="threshold_entity_type" type="string"/>
+            <column name="threshold_treatment_flag" type="string"/>
+            <column name="payment_surcharge_type" type="string"/>
+            <column name="property_bill_prefix" type="string"/>
+            <column name="tax_elements" type="string"/>
+            <column name="number_dialed" type="string"/>
+            <column name="check_file_id" type="string"/>
+            <column name="ext_trx_id" type="string"/>
+            <column name="package_trx_type" type="string"/>
+            <column name="exp_original_invoice" type="string"/>
+            <column name="deposit_transaction_id" type="string"/>
+            <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
+        </loadData>
+    </changeSet>
+</databaseChangeLog>

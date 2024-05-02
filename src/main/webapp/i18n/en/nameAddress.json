@@ -1,0 +1,56 @@
+{
+  "operaHandlerApplicationApp": {
+    "nameAddress": {
+      "home": {
+        "title": "Name Addresses",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Name Address",
+        "createOrEditLabel": "Create or edit a Name Address",
+        "notFound": "No Name Addresses found"
+      },
+      "created": "A new Name Address is created with identifier { param }",
+      "updated": "A Name Address is updated with identifier { param }",
+      "deleted": "A Name Address is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Name Address { id }?"
+      },
+      "detail": {
+        "title": "Name Address"
+      },
+      "id": "Id",
+      "addressId": "Address Id",
+      "addressType": "Address Type",
+      "address1": "Address 1",
+      "address2": "Address 2",
+      "address3": "Address 3",
+      "address4": "Address 4",
+      "barcode": "Barcode",
+      "beginDate": "Begin Date",
+      "chainCode": "Chain Code",
+      "city": "City",
+      "cityExt": "City Ext",
+      "cleansedDatetime": "Cleansed Datetime",
+      "cleansedErrormsg": "Cleansed Errormsg",
+      "cleansedMatchstatus": "Cleansed Matchstatus",
+      "cleansedStatus": "Cleansed Status",
+      "cleansedValidationstatus": "Cleansed Validationstatus",
+      "country": "Country",
+      "endDate": "End Date",
+      "foreignCountry": "Foreign Country",
+      "inCareOf": "In Care Of",
+      "inactiveDate": "Inactive Date",
+      "insertDate": "Insert Date",
+      "insertUser": "Insert User",
+      "languageCode": "Language Code",
+      "laptopChange": "Laptop Change",
+      "lastUpdatedResort": "Last Updated Resort",
+      "nameId": "Name Id",
+      "primaryYn": "Primary Yn",
+      "province": "Province",
+      "state": "State",
+      "updateDate": "Update Date",
+      "updateUser": "Update User",
+      "zipCode": "Zip Code"
+    }
+  }
+}

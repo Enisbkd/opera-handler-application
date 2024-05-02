@@ -1,0 +1,149 @@
+{
+  "annotations": {
+    "changelogDate": "20240502082158"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "addressId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "addressType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "address1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "address2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "address3",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "address4",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "barcode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "beginDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "chainCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "city",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cityExt",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cleansedDatetime",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "cleansedErrormsg",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cleansedMatchstatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cleansedStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cleansedValidationstatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "country",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "endDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "foreignCountry",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "inCareOf",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "inactiveDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "insertDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "insertUser",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "languageCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "laptopChange",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "lastUpdatedResort",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nameId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "primaryYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "province",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "state",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updateDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "updateUser",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "zipCode",
+      "fieldType": "String"
+    }
+  ],
+  "name": "NameAddress",
+  "pagination": "pagination",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

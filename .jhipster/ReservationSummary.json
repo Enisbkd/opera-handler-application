@@ -1,0 +1,417 @@
+{
+  "annotations": {
+    "changelogDate": "20240502082200"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "resort",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "eventType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "eventId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "consideredDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "roomCategory",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "roomClass",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "marketCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sourceCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "rateCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "regionCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "groupId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "resvType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "resvInvType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "psuedoRoomYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "arrRooms",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "adults",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "children",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "depRooms",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "noRooms",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "grossRate",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "netRoomRevenue",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "extraRevenue",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "ooRooms",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "osRooms",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "remainingBlockRooms",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "pickedupBlockRooms",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "singleOccupancy",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "multipleOccupancy",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "blockStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "arrPersons",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "depPersons",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "wlRooms",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "wlPersons",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "dayUseRooms",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "dayUsePersons",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "bookingStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "resvStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dayUseYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "channel",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "country",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nationality",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cribs",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "extraBeds",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "adultsTaxFree",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "childrenTaxFree",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "rateCategory",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "rateClass",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "roomRevenue",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "foodRevenue",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "otherRevenue",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "totalRevenue",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "nonRevenue",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "allotmentHeaderId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "roomRevenueTax",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "foodRevenueTax",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "otherRevenueTax",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "totalRevenueTax",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "nonRevenueTax",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "city",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "zipCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "district",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "state",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "children1",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "children2",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "children3",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "children4",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "children5",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "ownerFfFlag",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ownerRentalFlag",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fcGrossRate",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "fcNetRoomRevenue",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "fcExtraRevenue",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "fcRoomRevenue",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "fcFoodRevenue",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "fcOtherRevenue",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "fcTotalRevenue",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "fcNonRevenue",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "fcRoomRevenueTax",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "fcFoodRevenueTax",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "fcOtherRevenueTax",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "fcTotalRevenueTax",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "fcNonRevenueTax",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "currencyCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "exchangeDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "updateBusinessDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "updateDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "centralCurrencyCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "centralExchangeRate",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "truncBeginDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "truncEndDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "businessDateCreated",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "resInsertSource",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "parentCompanyId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "agentId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "gender",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "vipStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "quantity",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "turndownStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "bookedRoomCategory",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sourceProfId",
+      "fieldType": "Integer"
+    }
+  ],
+  "name": "ReservationSummary",
+  "pagination": "pagination",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

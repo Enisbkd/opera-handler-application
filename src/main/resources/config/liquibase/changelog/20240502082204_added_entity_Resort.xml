@@ -1,0 +1,1006 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <!--
+        Added the entity Resort.
+    -->
+    <changeSet id="20240502082204-1" author="jhipster">
+        <createTable tableName="resort">
+            <column name="id" type="varchar(255)">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="resort" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="begin_date" type="${datetimeType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="check_in_time" type="${datetimeType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="check_out_time" type="${datetimeType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="video_co_start" type="${datetimeType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="video_co_stop" type="${datetimeType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="insert_date" type="${datetimeType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="update_date" type="${datetimeType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="expiry_date" type="${datetimeType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="end_date" type="${datetimeType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="fiscal_start_date" type="${datetimeType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="fiscal_end_date" type="${datetimeType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="reconcile_date" type="${datetimeType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="payment_date" type="${datetimeType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="keep_availability" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="budget_month" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="save_profiles" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="long_stay_control" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="credit_limit" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="number_rooms" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="number_floors" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="number_beds" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="rhythm_sheets" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="rhythm_towels" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="warning_amount" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="decimal_places" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="font" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="copies" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="default_folio_style" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="individual_room_warning" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="group_room_warning" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="aging_level_1" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="aging_level_2" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="aging_level_3" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="aging_level_4" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="aging_level_5" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="zero_inv_pur_days" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="min_days_bet_2_reminder_letter" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="insert_user" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="update_user" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="currency_decimals" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="name_id_link" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="sgl_rate_1" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="sgl_rate_2" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="dbl_rate_1" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="dbl_rate_2" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="tpl_rate_1" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="tpl_rate_2" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="sui_rate_1" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="sui_rate_2" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="meet_space" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="img_hotel_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="img_direction_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="img_map_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="script_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="com_name_xref_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="path_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="xresort_number" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="max_credit_days" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="currency_divisor" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="latitude" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="longitude" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="qty_single_rooms" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="qty_double_rooms" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="qty_twin_rooms" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="qty_suites" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="qty_guest_room_floors" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="qty_guest_elevators" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="qty_non_smoking_rooms" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="qty_connecting_rooms" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="qty_handicapped_rooms" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="qty_family_rooms" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="max_adults_family_room" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="max_children_family_room" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="restaurant" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="meet_rooms" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="tot_rooms" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="br_seats" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="meet_seats" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="max_no_nights" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="awards_timeout" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="guest_lookup_timeout" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="wake_up_delay" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="max_occupancy" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="inactive_days_for_guest_profil" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="per_reservation_room_limit" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="lic_room_info" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="thousand_separator" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="date_separator" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ar_acct_no_mand_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="exchange_posting_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="inventory_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="allow_login_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="access_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="disable_login_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="int_tax_included_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="download_rest_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="translate_multichar_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="external_sc_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="send_lead_as_booking_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="mbs_supported_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="quoted_currency" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="com_method" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="email" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="genmgr" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="dirsales" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="leadsend" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="airport" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="com_address" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="season_1" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="season_2" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="season_3" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="season_4" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="season_5" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="floor_num_executive_floor" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="crs_resort" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="post_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="default_reservation_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="jhi_block" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="currency_symbol" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="source_commission" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ta_commission" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="base_language" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="folio_language_1" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="folio_language_2" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="folio_language_3" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="folio_language_4" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="package_profit" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="package_loss" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="decimal_separator" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="short_date_format" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="long_date_format" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="passerby_source" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="passerby_market" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ar_company" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ar_agent" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ar_groups" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ar_individuals" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ar_acct_no_format" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="allowance_period_adj" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="currency_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="turnaway_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="summ_currency_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="default_property_address" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="default_guest_address" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="license_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="time_format" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="chain_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="resort_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="hotel_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ownership" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ar_bal_trx_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ar_credit_trx_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ar_settle_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="cash_shift_drop" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="check_exg_paidout" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="check_shift_drop" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="check_trxcode" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="currency_exg_paidout" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="deposit_led_trx_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="fiscal_period_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="default_commission_percentage" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="default_prepaid_comm" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="default_trx_comm_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="configuration_mode" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="weekend_days" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="default_groups_rate_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="default_posting_room" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="dflt_pkg_tran_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="dflt_tran_code_rate_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="default_rate_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="cro_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="flow_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ext_property_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="opus_currency_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="destination_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="flags" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tourist_number" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="catering_currency_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="default_ratecode_rack" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="default_ratecode_pcr" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="fns_tier" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="brand_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="webaddress" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="vat_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="street" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="hotel_fc" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="meeting_fc" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ar_typewriter" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="file_transfer_format" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="confirm_regcard_printer" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="directions" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="propinfo_url" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="room_amenity" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="shop_description" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="prop_pic_url" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="prop_map_url" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ext_exp_file_location" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="curtain_color" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="country_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="state" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="date_for_aging" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="region_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="city" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="telephone" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="fax" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tollfree" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="default_printer" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="videocheckout_printer" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="company_address_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="company_phone_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="default_fax_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="default_membership_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="individual_address_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="individual_phone_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="notes" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="blackout_period_notes" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="sgl_num" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="dbl_num" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tpl_num" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="sui_num" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="airport_distance" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="airport_time" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="br_area" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="legal_owner" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="hotel_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="fax_no_format" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="telephone_no_format" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="local_currency_format" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="duty_manager_pager" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="default_registration_card" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="night_audit_cashier_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="hotel_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="path" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="timezone_region" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="catering_currency_format" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="exp_hotel_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
+        </createTable>
+        <dropDefaultValue tableName="resort" columnName="begin_date" columnDataType="${datetimeType}"/>
+        <dropDefaultValue tableName="resort" columnName="check_in_time" columnDataType="${datetimeType}"/>
+        <dropDefaultValue tableName="resort" columnName="check_out_time" columnDataType="${datetimeType}"/>
+        <dropDefaultValue tableName="resort" columnName="video_co_start" columnDataType="${datetimeType}"/>
+        <dropDefaultValue tableName="resort" columnName="video_co_stop" columnDataType="${datetimeType}"/>
+        <dropDefaultValue tableName="resort" columnName="insert_date" columnDataType="${datetimeType}"/>
+        <dropDefaultValue tableName="resort" columnName="update_date" columnDataType="${datetimeType}"/>
+        <dropDefaultValue tableName="resort" columnName="expiry_date" columnDataType="${datetimeType}"/>
+        <dropDefaultValue tableName="resort" columnName="end_date" columnDataType="${datetimeType}"/>
+        <dropDefaultValue tableName="resort" columnName="fiscal_start_date" columnDataType="${datetimeType}"/>
+        <dropDefaultValue tableName="resort" columnName="fiscal_end_date" columnDataType="${datetimeType}"/>
+        <dropDefaultValue tableName="resort" columnName="reconcile_date" columnDataType="${datetimeType}"/>
+        <dropDefaultValue tableName="resort" columnName="payment_date" columnDataType="${datetimeType}"/>
+    </changeSet>
+
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here -->
+
+    <!--
+        Load sample data generated with Faker.js
+        - This data can be easily edited using a CSV editor (or even MS Excel) and
+          is located in the 'src/main/resources/config/liquibase/fake-data' directory
+        - By default this data is applied when running with the JHipster 'dev' profile.
+          This can be customized by adding or removing 'faker' in the 'spring.liquibase.contexts'
+          Spring Boot configuration key.
+    -->
+    <changeSet id="20240502082204-1-data" author="jhipster" context="faker">
+        <loadData
+                  file="config/liquibase/fake-data/resort.csv"
+                  separator=";"
+                  tableName="resort"
+                  usePreparedStatements="true">
+            <column name="id" type="string"/>
+            <column name="resort" type="string"/>
+            <column name="begin_date" type="date"/>
+            <column name="check_in_time" type="date"/>
+            <column name="check_out_time" type="date"/>
+            <column name="video_co_start" type="date"/>
+            <column name="video_co_stop" type="date"/>
+            <column name="insert_date" type="date"/>
+            <column name="update_date" type="date"/>
+            <column name="expiry_date" type="date"/>
+            <column name="end_date" type="date"/>
+            <column name="fiscal_start_date" type="date"/>
+            <column name="fiscal_end_date" type="date"/>
+            <column name="reconcile_date" type="date"/>
+            <column name="payment_date" type="date"/>
+            <column name="keep_availability" type="numeric"/>
+            <column name="budget_month" type="numeric"/>
+            <column name="save_profiles" type="numeric"/>
+            <column name="long_stay_control" type="numeric"/>
+            <column name="credit_limit" type="numeric"/>
+            <column name="number_rooms" type="numeric"/>
+            <column name="number_floors" type="numeric"/>
+            <column name="number_beds" type="numeric"/>
+            <column name="rhythm_sheets" type="numeric"/>
+            <column name="rhythm_towels" type="numeric"/>
+            <column name="warning_amount" type="numeric"/>
+            <column name="decimal_places" type="numeric"/>
+            <column name="font" type="numeric"/>
+            <column name="copies" type="numeric"/>
+            <column name="default_folio_style" type="numeric"/>
+            <column name="individual_room_warning" type="numeric"/>
+            <column name="group_room_warning" type="numeric"/>
+            <column name="aging_level_1" type="numeric"/>
+            <column name="aging_level_2" type="numeric"/>
+            <column name="aging_level_3" type="numeric"/>
+            <column name="aging_level_4" type="numeric"/>
+            <column name="aging_level_5" type="numeric"/>
+            <column name="zero_inv_pur_days" type="numeric"/>
+            <column name="min_days_bet_2_reminder_letter" type="numeric"/>
+            <column name="insert_user" type="numeric"/>
+            <column name="update_user" type="numeric"/>
+            <column name="currency_decimals" type="numeric"/>
+            <column name="name_id_link" type="numeric"/>
+            <column name="sgl_rate_1" type="numeric"/>
+            <column name="sgl_rate_2" type="numeric"/>
+            <column name="dbl_rate_1" type="numeric"/>
+            <column name="dbl_rate_2" type="numeric"/>
+            <column name="tpl_rate_1" type="numeric"/>
+            <column name="tpl_rate_2" type="numeric"/>
+            <column name="sui_rate_1" type="numeric"/>
+            <column name="sui_rate_2" type="numeric"/>
+            <column name="meet_space" type="numeric"/>
+            <column name="img_hotel_id" type="numeric"/>
+            <column name="img_direction_id" type="numeric"/>
+            <column name="img_map_id" type="numeric"/>
+            <column name="script_id" type="numeric"/>
+            <column name="com_name_xref_id" type="numeric"/>
+            <column name="path_id" type="numeric"/>
+            <column name="xresort_number" type="numeric"/>
+            <column name="max_credit_days" type="numeric"/>
+            <column name="currency_divisor" type="numeric"/>
+            <column name="latitude" type="numeric"/>
+            <column name="longitude" type="numeric"/>
+            <column name="qty_single_rooms" type="numeric"/>
+            <column name="qty_double_rooms" type="numeric"/>
+            <column name="qty_twin_rooms" type="numeric"/>
+            <column name="qty_suites" type="numeric"/>
+            <column name="qty_guest_room_floors" type="numeric"/>
+            <column name="qty_guest_elevators" type="numeric"/>
+            <column name="qty_non_smoking_rooms" type="numeric"/>
+            <column name="qty_connecting_rooms" type="numeric"/>
+            <column name="qty_handicapped_rooms" type="numeric"/>
+            <column name="qty_family_rooms" type="numeric"/>
+            <column name="max_adults_family_room" type="numeric"/>
+            <column name="max_children_family_room" type="numeric"/>
+            <column name="restaurant" type="numeric"/>
+            <column name="meet_rooms" type="numeric"/>
+            <column name="tot_rooms" type="numeric"/>
+            <column name="br_seats" type="numeric"/>
+            <column name="meet_seats" type="numeric"/>
+            <column name="max_no_nights" type="numeric"/>
+            <column name="awards_timeout" type="numeric"/>
+            <column name="guest_lookup_timeout" type="numeric"/>
+            <column name="wake_up_delay" type="numeric"/>
+            <column name="max_occupancy" type="numeric"/>
+            <column name="inactive_days_for_guest_profil" type="numeric"/>
+            <column name="per_reservation_room_limit" type="numeric"/>
+            <column name="lic_room_info" type="string"/>
+            <column name="thousand_separator" type="string"/>
+            <column name="date_separator" type="string"/>
+            <column name="ar_acct_no_mand_yn" type="string"/>
+            <column name="exchange_posting_type" type="string"/>
+            <column name="inventory_yn" type="string"/>
+            <column name="allow_login_yn" type="string"/>
+            <column name="access_code" type="string"/>
+            <column name="disable_login_yn" type="string"/>
+            <column name="int_tax_included_yn" type="string"/>
+            <column name="download_rest_yn" type="string"/>
+            <column name="translate_multichar_yn" type="string"/>
+            <column name="external_sc_yn" type="string"/>
+            <column name="send_lead_as_booking_yn" type="string"/>
+            <column name="mbs_supported_yn" type="string"/>
+            <column name="quoted_currency" type="string"/>
+            <column name="com_method" type="string"/>
+            <column name="email" type="string"/>
+            <column name="genmgr" type="string"/>
+            <column name="dirsales" type="string"/>
+            <column name="leadsend" type="string"/>
+            <column name="airport" type="string"/>
+            <column name="com_address" type="string"/>
+            <column name="season_1" type="string"/>
+            <column name="season_2" type="string"/>
+            <column name="season_3" type="string"/>
+            <column name="season_4" type="string"/>
+            <column name="season_5" type="string"/>
+            <column name="floor_num_executive_floor" type="string"/>
+            <column name="crs_resort" type="string"/>
+            <column name="post_code" type="string"/>
+            <column name="default_reservation_type" type="string"/>
+            <column name="jhi_block" type="string"/>
+            <column name="currency_symbol" type="string"/>
+            <column name="source_commission" type="string"/>
+            <column name="ta_commission" type="string"/>
+            <column name="base_language" type="string"/>
+            <column name="folio_language_1" type="string"/>
+            <column name="folio_language_2" type="string"/>
+            <column name="folio_language_3" type="string"/>
+            <column name="folio_language_4" type="string"/>
+            <column name="package_profit" type="string"/>
+            <column name="package_loss" type="string"/>
+            <column name="decimal_separator" type="string"/>
+            <column name="short_date_format" type="string"/>
+            <column name="long_date_format" type="string"/>
+            <column name="passerby_source" type="string"/>
+            <column name="passerby_market" type="string"/>
+            <column name="ar_company" type="string"/>
+            <column name="ar_agent" type="string"/>
+            <column name="ar_groups" type="string"/>
+            <column name="ar_individuals" type="string"/>
+            <column name="ar_acct_no_format" type="string"/>
+            <column name="allowance_period_adj" type="string"/>
+            <column name="currency_code" type="string"/>
+            <column name="turnaway_code" type="string"/>
+            <column name="summ_currency_code" type="string"/>
+            <column name="default_property_address" type="string"/>
+            <column name="default_guest_address" type="string"/>
+            <column name="license_code" type="string"/>
+            <column name="time_format" type="string"/>
+            <column name="chain_code" type="string"/>
+            <column name="resort_type" type="string"/>
+            <column name="hotel_type" type="string"/>
+            <column name="ownership" type="string"/>
+            <column name="ar_bal_trx_code" type="string"/>
+            <column name="ar_credit_trx_code" type="string"/>
+            <column name="ar_settle_code" type="string"/>
+            <column name="cash_shift_drop" type="string"/>
+            <column name="check_exg_paidout" type="string"/>
+            <column name="check_shift_drop" type="string"/>
+            <column name="check_trxcode" type="string"/>
+            <column name="currency_exg_paidout" type="string"/>
+            <column name="deposit_led_trx_code" type="string"/>
+            <column name="fiscal_period_type" type="string"/>
+            <column name="default_commission_percentage" type="string"/>
+            <column name="default_prepaid_comm" type="string"/>
+            <column name="default_trx_comm_code" type="string"/>
+            <column name="configuration_mode" type="string"/>
+            <column name="weekend_days" type="string"/>
+            <column name="default_groups_rate_code" type="string"/>
+            <column name="default_posting_room" type="string"/>
+            <column name="dflt_pkg_tran_code" type="string"/>
+            <column name="dflt_tran_code_rate_code" type="string"/>
+            <column name="default_rate_code" type="string"/>
+            <column name="cro_code" type="string"/>
+            <column name="flow_code" type="string"/>
+            <column name="ext_property_code" type="string"/>
+            <column name="opus_currency_code" type="string"/>
+            <column name="destination_id" type="string"/>
+            <column name="flags" type="string"/>
+            <column name="tourist_number" type="string"/>
+            <column name="catering_currency_code" type="string"/>
+            <column name="default_ratecode_rack" type="string"/>
+            <column name="default_ratecode_pcr" type="string"/>
+            <column name="fns_tier" type="string"/>
+            <column name="brand_code" type="string"/>
+            <column name="webaddress" type="string"/>
+            <column name="vat_id" type="string"/>
+            <column name="street" type="string"/>
+            <column name="hotel_fc" type="string"/>
+            <column name="meeting_fc" type="string"/>
+            <column name="ar_typewriter" type="string"/>
+            <column name="file_transfer_format" type="string"/>
+            <column name="confirm_regcard_printer" type="string"/>
+            <column name="directions" type="string"/>
+            <column name="propinfo_url" type="string"/>
+            <column name="room_amenity" type="string"/>
+            <column name="shop_description" type="string"/>
+            <column name="prop_pic_url" type="string"/>
+            <column name="prop_map_url" type="string"/>
+            <column name="ext_exp_file_location" type="string"/>
+            <column name="curtain_color" type="string"/>
+            <column name="country_code" type="string"/>
+            <column name="state" type="string"/>
+            <column name="date_for_aging" type="string"/>
+            <column name="region_code" type="string"/>
+            <column name="city" type="string"/>
+            <column name="telephone" type="string"/>
+            <column name="fax" type="string"/>
+            <column name="tollfree" type="string"/>
+            <column name="default_printer" type="string"/>
+            <column name="videocheckout_printer" type="string"/>
+            <column name="company_address_type" type="string"/>
+            <column name="company_phone_type" type="string"/>
+            <column name="default_fax_type" type="string"/>
+            <column name="default_membership_type" type="string"/>
+            <column name="individual_address_type" type="string"/>
+            <column name="individual_phone_type" type="string"/>
+            <column name="notes" type="string"/>
+            <column name="blackout_period_notes" type="string"/>
+            <column name="sgl_num" type="string"/>
+            <column name="dbl_num" type="string"/>
+            <column name="tpl_num" type="string"/>
+            <column name="sui_num" type="string"/>
+            <column name="airport_distance" type="string"/>
+            <column name="airport_time" type="string"/>
+            <column name="br_area" type="string"/>
+            <column name="name" type="string"/>
+            <column name="legal_owner" type="string"/>
+            <column name="hotel_id" type="string"/>
+            <column name="fax_no_format" type="string"/>
+            <column name="telephone_no_format" type="string"/>
+            <column name="local_currency_format" type="string"/>
+            <column name="duty_manager_pager" type="string"/>
+            <column name="default_registration_card" type="string"/>
+            <column name="night_audit_cashier_id" type="string"/>
+            <column name="hotel_code" type="string"/>
+            <column name="path" type="string"/>
+            <column name="timezone_region" type="string"/>
+            <column name="catering_currency_format" type="string"/>
+            <column name="exp_hotel_code" type="string"/>
+            <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
+        </loadData>
+    </changeSet>
+</databaseChangeLog>

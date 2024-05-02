@@ -1,0 +1,197 @@
+{
+  "annotations": {
+    "changelogDate": "20240502082201"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "resort",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "reservationDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "resvDailyElSeq",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "resvStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "externalReference",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "roomClass",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "roomCategory",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "bookedRoomCategory",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "room",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cancellationNo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "cancellationDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "cancellationCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cancellationReasonDesc",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "guaranteeCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "marketCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "originOfBooking",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "exchangeRate",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "originalBaseRate",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "baseRateAmount",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "rateAmount",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "roomCost",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "quantity",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "adults",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "children",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "physicalQuantity",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "allotmentHeaderId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "dayUseYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dueOutYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "insertUser",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "insertDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "updateUser",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "updateDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "insertActionInstanceId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "dmlSeqNo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "extSeqNo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "extSegNo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "cribs",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "extraBeds",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "allotmentRecordType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "blockResort",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "blockId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "turndownStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "awdUpgrFrom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "awdUpgrTo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "hkExpectedServiceTime",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "roomInstructions",
+      "fieldType": "String"
+    }
+  ],
+  "name": "ReservationDailyElements",
+  "pagination": "pagination",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}
