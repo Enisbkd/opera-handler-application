@@ -1,0 +1,69 @@
+{
+  "operaHandlerApplicationApp": {
+    "reservationDailyElements": {
+      "home": {
+        "title": "Reservation Daily Elements",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Reservation Daily Elements",
+        "createOrEditLabel": "Create or edit a Reservation Daily Elements",
+        "notFound": "No Reservation Daily Elements found"
+      },
+      "created": "A new Reservation Daily Elements is created with identifier { param }",
+      "updated": "A Reservation Daily Elements is updated with identifier { param }",
+      "deleted": "A Reservation Daily Elements is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Reservation Daily Elements { id }?"
+      },
+      "detail": {
+        "title": "Reservation Daily Elements"
+      },
+      "id": "ID",
+      "resort": "Resort",
+      "reservationDate": "Reservation Date",
+      "resvDailyElSeq": "Resv Daily El Seq",
+      "resvStatus": "Resv Status",
+      "externalReference": "External Reference",
+      "roomClass": "Room Class",
+      "roomCategory": "Room Category",
+      "bookedRoomCategory": "Booked Room Category",
+      "room": "Room",
+      "cancellationNo": "Cancellation No",
+      "cancellationDate": "Cancellation Date",
+      "cancellationCode": "Cancellation Code",
+      "cancellationReasonDesc": "Cancellation Reason Desc",
+      "guaranteeCode": "Guarantee Code",
+      "marketCode": "Market Code",
+      "originOfBooking": "Origin Of Booking",
+      "exchangeRate": "Exchange Rate",
+      "originalBaseRate": "Original Base Rate",
+      "baseRateAmount": "Base Rate Amount",
+      "rateAmount": "Rate Amount",
+      "roomCost": "Room Cost",
+      "quantity": "Quantity",
+      "adults": "Adults",
+      "children": "Children",
+      "physicalQuantity": "Physical Quantity",
+      "allotmentHeaderId": "Allotment Header Id",
+      "dayUseYn": "Day Use Yn",
+      "dueOutYn": "Due Out Yn",
+      "insertUser": "Insert User",
+      "insertDate": "Insert Date",
+      "updateUser": "Update User",
+      "updateDate": "Update Date",
+      "insertActionInstanceId": "Insert Action Instance Id",
+      "dmlSeqNo": "Dml Seq No",
+      "extSeqNo": "Ext Seq No",
+      "extSegNo": "Ext Seg No",
+      "cribs": "Cribs",
+      "extraBeds": "Extra Beds",
+      "allotmentRecordType": "Allotment Record Type",
+      "blockResort": "Block Resort",
+      "blockId": "Block Id",
+      "turndownStatus": "Turndown Status",
+      "awdUpgrFrom": "Awd Upgr From",
+      "awdUpgrTo": "Awd Upgr To",
+      "hkExpectedServiceTime": "Hk Expected Service Time",
+      "roomInstructions": "Room Instructions"
+    }
+  }
+}

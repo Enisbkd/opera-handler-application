@@ -1,0 +1,52 @@
+{
+  "operaHandlerApplicationApp": {
+    "namePhone": {
+      "home": {
+        "title": "NamePhones",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Name Phone",
+        "createOrEditLabel": "Créer ou éditer un Name Phone",
+        "notFound": "Aucun Name Phone trouvé"
+      },
+      "created": "Un nouveau Name Phone a été créé avec l'identifiant { param }",
+      "updated": "Le Name Phone avec l'identifiant { param } a été mis à jour",
+      "deleted": "Le Name Phone avec l'identifiant { param } a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Name Phone { id } ?"
+      },
+      "detail": {
+        "title": "Name Phone"
+      },
+      "id": "Id",
+      "phoneId": "Phone Id",
+      "nameId": "Name Id",
+      "phoneType": "Phone Type",
+      "phoneRole": "Phone Role",
+      "phoneNumber": "Phone Number",
+      "insertDate": "Insert Date",
+      "insertUser": "Insert User",
+      "updateDate": "Update Date",
+      "updateUser": "Update User",
+      "inactiveDate": "Inactive Date",
+      "endDate": "End Date",
+      "beginDate": "Begin Date",
+      "addressId": "Address Id",
+      "primaryYn": "Primary Yn",
+      "displaySeq": "Display Seq",
+      "laptopChange": "Laptop Change",
+      "indexPhone": "Index Phone",
+      "extension": "Extension",
+      "emailFormat": "Email Format",
+      "shareEmailYn": "Share Email Yn",
+      "defaultConfirmationYn": "Default Confirmation Yn",
+      "emailLanguage": "Email Language",
+      "mobileAudioKeyYn": "Mobile Audio Key Yn",
+      "countryDialingCode": "Country Dialing Code",
+      "validYn": "Valid Yn",
+      "phoneCountryCode": "Phone Country Code",
+      "chainCode": "Chain Code",
+      "validateDate": "Validate Date",
+      "validateStatus": "Validate Status"
+    }
+  }
+}

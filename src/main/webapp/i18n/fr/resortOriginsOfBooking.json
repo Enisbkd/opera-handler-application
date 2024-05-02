@@ -1,0 +1,35 @@
+{
+  "operaHandlerApplicationApp": {
+    "resortOriginsOfBooking": {
+      "home": {
+        "title": "ResortOriginsOfBookings",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Resort Origins Of Booking",
+        "createOrEditLabel": "Créer ou éditer un Resort Origins Of Booking",
+        "notFound": "Aucun Resort Origins Of Booking trouvé"
+      },
+      "created": "Un nouveau Resort Origins Of Booking a été créé avec l'identifiant { param }",
+      "updated": "Le Resort Origins Of Booking avec l'identifiant { param } a été mis à jour",
+      "deleted": "Le Resort Origins Of Booking avec l'identifiant { param } a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Resort Origins Of Booking { id } ?"
+      },
+      "detail": {
+        "title": "Resort Origins Of Booking"
+      },
+      "id": "ID",
+      "resort": "Resort",
+      "sourceCode": "Source Code",
+      "parentSourceCode": "Parent Source Code",
+      "description": "Description",
+      "insertUser": "Insert User",
+      "insertDate": "Insert Date",
+      "updateUser": "Update User",
+      "updateDate": "Update Date",
+      "inactiveDate": "Inactive Date",
+      "sellSequence": "Sell Sequence",
+      "scOrderby": "Sc Orderby",
+      "internetSalesYn": "Internet Sales Yn"
+    }
+  }
+}

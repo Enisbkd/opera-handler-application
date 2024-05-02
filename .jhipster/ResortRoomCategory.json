@@ -1,0 +1,277 @@
+{
+  "annotations": {
+    "changelogDate": "20240502082206"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "resort",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "roomCategory",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "roomClass",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "numberRooms",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "shortDescription",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "longDescription",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "compiled",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "psuedoRoomType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "activeDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "inactiveDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "replacesCategory",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "orderBy",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "maxOccupancy",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "maxRollaways",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "rateCategory",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "label",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "genericFlag",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "suiteYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "meetingroomYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "insertUser",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "insertDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "updateUser",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "updateDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "rateCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "rateAmount",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "defOccupancy",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "imageId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "pseudoYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sendToInterfaceYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "yieldableYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "yieldCategory",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "housekeeping",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "canDeleteYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "roominfoUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ownerYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "autoIncludeYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "initialRoundUp",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "increments",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "rotationGroup",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesFlag",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "autoRoomAssignYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "upsellYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ormsUpsellRank",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "ormsUpsellAmt",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "ormsDrxtraAdult",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "ormsDrxtraChild",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "maxOccupancyAdults",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "maxOccupancyChildren",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "roomPool",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "memberAwardRoomGrp",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ormsDrxtra2ndAdult",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "ormsDrtier1",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "ormsDrtier2",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "ormsDrtier3",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "autoCheckinYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "rateFloor",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "maxFixBedOccupancy",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "maintenanceYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "smokingPreference",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sLabel",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sBedtype",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sellThruRuleYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "crsDescription",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "evisitorFacilityId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "minOccupancy",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "accessibleYn",
+      "fieldType": "String"
+    }
+  ],
+  "name": "ResortRoomCategory",
+  "pagination": "pagination",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

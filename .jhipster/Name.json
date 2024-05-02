@@ -1,0 +1,1137 @@
+{
+  "annotations": {
+    "changelogDate": "20240502082208"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "nameId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "nameCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "insertUser",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "insertDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "updateUser",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "updateDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "primaryNameId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "repeatGuestId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mailList",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mailType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "followOn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "businessTitle",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "inactiveDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "arcUpdateDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "updateFaxDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "birthDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "collectionUserId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "company",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "soundExCompany",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "legalCompany",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "first",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "middle",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "last",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nickname",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "soundExLast",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "externalReferenceRequ",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "vipStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "vipAuthorization",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "billingProfileCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "rateStructure",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nameComment",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tourOperatorType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "region",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "typeOf1099",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tax1No",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "companyNameId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "externalReferenceRequired",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "vendorId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "vendorSiteId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "arcOfficeType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tax2No",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "arcMailFlag",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "name2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "name3",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesrep",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tracecode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "geographicRegion",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "guestClassification",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "primaryAddressId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "primaryPhoneId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "taxExemptStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "gdsName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "gdsTransactionNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nationality",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "language",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salutation",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "passport",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "historyYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "resvContact",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "contractNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "contractRecvDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "acctContact",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "priority",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "industryCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "roomsPotential",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "competitionCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "scope",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "scopeCity",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "territory",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "actioncode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "activeYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "masterAccountYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nameType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sname",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nameTaxType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sfirst",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "arNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "availabilityOverride",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "billingCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cashBlInd",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "blMsg",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "currencyCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "commissionCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "holdCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "interest",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "summRefCc",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "iataCompType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "srepCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accountsource",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "markets",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "productInterest",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "keyword",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "letterGreeting",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "influence",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "deptId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "department",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "contactYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accountType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "downloadResort",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "downloadSrep",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "downloadDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "uploadDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "laptopChange",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "crsNameid",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "commPayCentral",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ccProfileYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "gender",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "birthPlace",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "birthCountry",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "profession",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "idType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "idNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "idDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "idPlace",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "idCountry",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc01",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc02",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc03",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc04",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc05",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc06",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc07",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc08",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc09",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc10",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc11",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc12",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc13",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc14",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc15",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc16",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc17",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc18",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc19",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc20",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc21",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc22",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc23",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc24",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc25",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc26",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc27",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc28",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc29",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc30",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc31",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc32",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc33",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc34",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc35",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc36",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc37",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc38",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc39",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfc40",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "udfn01",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn02",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn03",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn04",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn05",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn06",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn07",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn08",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn09",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn10",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn11",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn12",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn13",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn14",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn15",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn16",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn17",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn18",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn19",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn20",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn21",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn22",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn23",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn24",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn25",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn26",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn27",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn28",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn29",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn30",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn31",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn32",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn33",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn34",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn35",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn36",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn37",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn38",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn39",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfn40",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "udfd01",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "udfd02",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "udfd03",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "udfd04",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "udfd05",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "udfd06",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "udfd07",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "udfd08",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "udfd09",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "udfd10",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "udfd11",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "udfd12",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "udfd13",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "udfd14",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "udfd15",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "udfd16",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "udfd17",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "udfd18",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "udfd19",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "udfd20",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "paymentDueDays",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "suffix",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "externalId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "guestPrivYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "emailYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mailYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "indexName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "xlastName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "xfirstName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "xcompanyName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "xtitle",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "xsalutation",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sxname",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sxfirstName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lastUpdatedResort",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "envelopeGreeting",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "xenvelopeGreeting",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "directBillBatchType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "resortRegistered",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "taxOffice",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "taxType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "taxCategory",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "preferredRoomNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "phoneYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "smsYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isProtected",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "xlanguage",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "marketResearchYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "thirdPartyYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "autoenrollMemberYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "chainCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "companyGroupId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "includeIn1099Yn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "creditRating",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "titleSuffix",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "inactiveReason",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "iataConsortia",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "psuedoProfileYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "profilePrivacyFlg",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "replaceAddress",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "alienRegistrationNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "immigrationStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "visaValidityType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "idDocumentAttachId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "superSearchIndexText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "birthDateStr",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "origNameId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "dOptInMailListFlg",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dOptInMarketResearchFlg",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dOptInThirdPartyFlg",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dOptInAutoenrollMemberFlg",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dOptInEmailFlg",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dOptInPhoneFlg",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dOptInSmsFlg",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dOptInGuestPrivFlg",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "arCreditLimitYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "profileCreditLimit",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "xmiddleName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "eInvoiceLiableYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "eInvLiableLastUpdated",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "internalBillYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "compPreApprovalRequiredYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "anonymizationStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "anonymizationDate",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "name": "Name",
+  "pagination": "pagination",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

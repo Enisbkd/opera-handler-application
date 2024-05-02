@@ -1,0 +1,2080 @@
+entity ApplicationUser{
+id Integer
+appUserId Integer
+appUser String
+appPassword String
+insertDate LocalDate
+insertUser Integer
+updateDate LocalDate
+updateUser Integer
+oracleUid Integer
+oracleUser String
+oraclePassword String
+inactiveDate LocalDate
+title String
+defaultForm String
+name String
+appUserType String
+lastLoggedResort String
+defCashierId Integer
+appUserDescription String
+personNameId Integer
+disabledUntil LocalDate
+expiresOn LocalDate
+lastLoggedTimestamp LocalDate
+isSuperuser String
+employeeNumber String
+generalFilepath String
+userFilepath String
+defaultResort String
+maxUserSessions Integer
+internalYn String
+maxCheckoutDays Integer
+defaultTerminal String
+defaultLanguage String
+deptId String
+maleFemale String
+userPbxId Integer
+dateHired LocalDate
+workPermitNo String
+workPermitExpdate LocalDate
+rateType String
+salaryInterval String
+hourlyRate Integer
+weeklySalary Integer
+otMultiplier Integer
+hireType String
+rehireYn String
+empExtension String
+empPager String
+termReason String
+terminatedDate LocalDate
+inactiveReasonCode String
+inactiveFrom LocalDate
+inactiveTo LocalDate
+weekMin Integer
+weekMax Integer
+mondayMin Integer
+mondayMax Integer
+tuesdayMin Integer
+tuesdayMax Integer
+wednesdayMin Integer
+wednesdayMax Integer
+thursdayMin Integer
+thursdayMax Integer
+fridayMin Integer
+fridayMax Integer
+saturdayMin Integer
+saturdayMax Integer
+sundayMin Integer
+sundayMax Integer
+comments String
+leadAddress String
+leadComm String
+leadAddressDet String
+laptopId Integer
+hoursPerWeek Integer
+empStatus String
+passwordLastChange LocalDate
+passwordChangeDays Integer
+graceLogin Integer
+srepGroup String
+defaultReportgroup String
+authorizerYn String
+authorizerInactiveDate LocalDate
+sfaName String
+loginCro String
+authorizerRateCode String
+loginDomain String
+receiveBroadcastMsg String
+defaultMfnResort String
+mfnUserType String
+forcePasswordChangeYn String
+accountLockedOutYn String
+preventAccountLockout String
+lockoutDate LocalDate
+accessPms String
+accessSc String
+accessConfig String
+accessEod String
+accessUtil String
+accessOrs String
+accessSfa String
+accessOcis String
+accessOcm String
+accessOxi String
+accessOxihub String
+chainCode String
+appUserUniq String
+maxDaysAfterCo Integer
+userGroupAdmin String
+accessOrms String
+accessObi String
+srepCode String
+loginAttempts Integer
+propertyAccessYn String
+accessScbi String
+timezoneRegion String
+accessOcrm String
+employeeIncentiveNumber String
+serviceRequestAlertsYn String
+mobileAlertsYn String
+}
+
+entity FinancialTransactions{
+id Integer
+trxNo Integer
+ftSubtype String
+invoiceCloseDate LocalDate
+arTransferDate LocalDate
+trxDate LocalDate
+businessDate LocalDate
+insertDate LocalDate
+updateDate LocalDate
+trnsActivityDate LocalDate
+approvalDate LocalDate
+postingDate LocalDate
+exchangeDate LocalDate
+routingDate LocalDate
+effectiveDate LocalDate
+customChargeDate LocalDate
+recptNo Integer
+trxNoAdjust Integer
+trxNoAddedBy Integer
+trxNoAgainstPackage Integer
+trxNoHeader Integer
+arNumber Integer
+resvNameId Integer
+cashierId Integer
+creditCardId Integer
+nameId Integer
+tranActionId Integer
+finDmlSeqNo Integer
+routingInstrnId Integer
+fromResvId Integer
+genCashierId Integer
+folioNo Integer
+invoiceNo Integer
+insertUser Integer
+updateUser Integer
+arrangementId Integer
+trnsFromAcct Integer
+trnsToAcct Integer
+billNo Integer
+revisionNo Integer
+resvDepositId Integer
+linkTrxNo Integer
+authorizerId Integer
+compLinkTrxNo Integer
+mtrxNoAgainstPackage Integer
+forexCommPerc Integer
+forexCommAmount Integer
+articleId Integer
+toResvNameId Integer
+roomNts Integer
+orgArLedDebit Integer
+closureNo Integer
+originalResvNameId Integer
+orgBillNo Integer
+membershipId Integer
+installments Integer
+contractGuestDebit Integer
+contractGuestCredit Integer
+contractNetAmount Integer
+contractGrossAmount Integer
+postitNo Integer
+ccTrxFeeAmount Integer
+changeDue Integer
+postingSourceNameId Integer
+bonusCheckId Integer
+roundLinkTrxno Integer
+reversePaymentTrxNo Integer
+electronicVoucherNo Integer
+thresholdDiversionId Integer
+thresholdEntityQty Integer
+trxNoSplit Integer
+exchDiffTrxNo Integer
+associatedTrxNo Integer
+taxRate Integer
+propChargeId Integer
+quantity BigDecimal
+netAmount BigDecimal
+grossAmount BigDecimal
+cashierOpeningBalance BigDecimal
+pricePerUnit BigDecimal
+trxAmount BigDecimal
+postedAmount BigDecimal
+guestAccountCredit BigDecimal
+exchangeRate BigDecimal
+guestAccountDebit BigDecimal
+cashierCredit BigDecimal
+cashierDebit BigDecimal
+packageCredit BigDecimal
+packageDebit BigDecimal
+depLedCredit BigDecimal
+depLedDebit BigDecimal
+revenueAmt BigDecimal
+arLedCredit BigDecimal
+arLedDebit BigDecimal
+euroExchangeRate BigDecimal
+inhDebit BigDecimal
+inhCredit BigDecimal
+packageAllowance BigDecimal
+parallelGuestCredit BigDecimal
+parallelGuestDebit BigDecimal
+parallelNetAmount BigDecimal
+parallelGrossAmount BigDecimal
+orgPostedAmount BigDecimal
+roomNtsEffective BigDecimal
+paymentSurchargeAmt BigDecimal
+folioView Integer
+taxInclusiveYn String
+deferredYn String
+indAdjustmentYn String
+fixedChargesYn String
+taCommissionableYn String
+taxGeneratedYn String
+compressedYn String
+displayYn String
+collAgentPostingYn String
+fiscalTrxCodeType String
+deferredTaxesYn String
+advancedGenerateYn String
+forexType String
+taCommissionNetYn String
+sourceCommissionNetYn String
+settlementFlag String
+accTypeFlag String
+profitLossFlag String
+proformaYn String
+holdYn String
+exchangeDifferenceYn String
+calcPointsYn String
+arChargeTransferYn String
+processed8300Yn String
+asbFlag String
+postitYn String
+autoSettleYn String
+depTaxTransferedYn String
+autoCreditbillYn String
+asbOnlyPostTaxesOnceYn String
+roundFactorYn String
+depPostingFlag String
+correctionYn String
+routedYn String
+upsellChargeYn String
+advanceBillYn String
+advanceBillReversedYn String
+incTaxDeductedYn String
+gpAwardCancelledYn String
+serviceRecoveryAdjustmentYn String
+splitType String
+bucketRedempYn String
+vatOffsetYn String
+forexTaxYn String
+stampDutyYn String
+covers String
+advGenerateAdjustment String
+expInvoiceType String
+folioType String
+orgFolioType String
+invoiceType String
+arState String
+exchangeType String
+recptType String
+roomClass String
+resort String
+tcGroup String
+tcSubgroup String
+trxCode String
+room String
+tclCode1 String
+currency String
+ftGeneratedType String
+tclCode2 String
+marketCode String
+sourceCode String
+rateCode String
+hotelAcct String
+reasonCode String
+product String
+targetResort String
+nameTaxType String
+taxInvNo String
+approvalCode String
+approvalStatus String
+compLinkTrxCode String
+compTypeCode String
+couponNo String
+originalRoom String
+allowanceType String
+advGenerateTrxCode String
+trxServiceType String
+postingType String
+parallelCurrency String
+contractCurrency String
+fbaCertificateNumber String
+postingRhythm String
+asbTaxFlag String
+packageArrangementCode String
+gpAwardCode String
+gpAwardCancelCode String
+serviceRecoveryDeptCode String
+bucketCode String
+taxRateType String
+chequeNumber String
+passerByName String
+esignedReceiptName String
+remark String
+reference String
+oTrxDesc String
+comments String
+fiscalBillNo String
+extSysResultMsg String
+queueName String
+paymentType String
+ccRefundPosting String
+thresholdEntityType String
+thresholdTreatmentFlag String
+paymentSurchargeType String
+propertyBillPrefix String
+taxElements String
+numberDialed String
+checkFileId String
+extTrxId String
+packageTrxType String
+expOriginalInvoice String
+depositTransactionId String
+}
+
+entity NameAddress{
+id Integer
+
+addressId Integer
+
+addressType String
+
+address1 String
+
+address2 String
+
+address3 String
+
+address4 String
+
+barcode String
+
+beginDate LocalDate
+
+chainCode String
+
+city String
+
+cityExt String
+
+cleansedDatetime LocalDate
+
+cleansedErrormsg String
+
+cleansedMatchstatus String
+
+cleansedStatus String
+
+cleansedValidationstatus String
+
+country String
+
+endDate LocalDate
+
+foreignCountry String
+
+inCareOf String
+
+inactiveDate LocalDate
+
+insertDate LocalDate
+
+insertUser Integer
+
+languageCode String
+
+laptopChange Integer
+
+lastUpdatedResort String
+
+nameId Integer
+
+primaryYn String
+
+province String
+
+state String
+
+updateDate LocalDate
+
+updateUser Integer
+
+zipCode String
+}
+
+
+entity NamePhone{
+
+id Integer
+
+phoneId Integer
+
+nameId Integer
+
+phoneType String
+
+phoneRole String
+
+phoneNumber String
+
+insertDate LocalDate
+
+insertUser Integer
+
+updateDate LocalDate
+
+updateUser Integer
+
+inactiveDate LocalDate
+
+endDate LocalDate
+
+beginDate LocalDate
+
+addressId Integer
+
+primaryYn String
+
+displaySeq Integer
+
+laptopChange Integer
+
+indexPhone String
+
+extension String
+
+emailFormat String
+
+shareEmailYn String
+
+defaultConfirmationYn String
+
+emailLanguage String
+
+mobileAudioKeyYn String
+
+countryDialingCode Integer
+
+validYn String
+
+phoneCountryCode String
+
+chainCode String
+
+validateDate LocalDate
+
+validateStatus String
+}
+
+entity ReservationSummary{
+id Integer
+resort String
+eventType String
+eventId String
+consideredDate LocalDate
+roomCategory String
+roomClass String
+marketCode String
+sourceCode String
+rateCode String
+regionCode String
+groupId Integer
+resvType String
+resvInvType String
+psuedoRoomYn String
+arrRooms Integer
+adults Integer
+children Integer
+depRooms Integer
+noRooms Integer
+grossRate BigDecimal
+netRoomRevenue BigDecimal
+extraRevenue BigDecimal
+ooRooms Integer
+osRooms Integer
+remainingBlockRooms Integer
+pickedupBlockRooms Integer
+singleOccupancy Integer
+multipleOccupancy Integer
+blockStatus String
+arrPersons Integer
+depPersons Integer
+wlRooms Integer
+wlPersons Integer
+dayUseRooms Integer
+dayUsePersons Integer
+bookingStatus String
+resvStatus String
+dayUseYn String
+channel String
+country String
+nationality String
+cribs Integer
+extraBeds Integer
+adultsTaxFree Integer
+childrenTaxFree Integer
+rateCategory String
+rateClass String
+roomRevenue BigDecimal
+foodRevenue BigDecimal
+otherRevenue BigDecimal
+totalRevenue BigDecimal
+nonRevenue BigDecimal
+allotmentHeaderId Integer
+roomRevenueTax BigDecimal
+foodRevenueTax BigDecimal
+otherRevenueTax BigDecimal
+totalRevenueTax BigDecimal
+nonRevenueTax BigDecimal
+city String
+zipCode String
+district String
+state String
+children1 Integer
+children2 Integer
+children3 Integer
+children4 Integer
+children5 Integer
+ownerFfFlag String
+ownerRentalFlag String
+fcGrossRate BigDecimal
+fcNetRoomRevenue BigDecimal
+fcExtraRevenue BigDecimal
+fcRoomRevenue BigDecimal
+fcFoodRevenue BigDecimal
+fcOtherRevenue BigDecimal
+fcTotalRevenue BigDecimal
+fcNonRevenue BigDecimal
+fcRoomRevenueTax BigDecimal
+fcFoodRevenueTax BigDecimal
+fcOtherRevenueTax BigDecimal
+fcTotalRevenueTax BigDecimal
+fcNonRevenueTax BigDecimal
+currencyCode String
+exchangeDate LocalDate
+updateBusinessDate LocalDate
+updateDate LocalDate
+centralCurrencyCode String
+centralExchangeRate BigDecimal
+truncBeginDate LocalDate
+truncEndDate LocalDate
+businessDateCreated LocalDate
+resInsertSource String
+parentCompanyId Integer
+agentId Integer
+gender String
+vipStatus String
+quantity Integer
+turndownStatus String
+bookedRoomCategory String
+sourceProfId Integer
+}
+
+entity ReservationDailyElements{
+resort String
+reservationDate LocalDate
+resvDailyElSeq Integer
+resvStatus String
+externalReference String
+roomClass String
+roomCategory String
+bookedRoomCategory String
+room String
+cancellationNo Integer
+cancellationDate LocalDate
+cancellationCode String
+cancellationReasonDesc String
+guaranteeCode String
+marketCode String
+originOfBooking String
+exchangeRate Integer
+originalBaseRate Integer
+baseRateAmount Integer
+rateAmount Integer
+roomCost Integer
+quantity Integer
+adults Integer
+children Integer
+physicalQuantity Integer
+allotmentHeaderId Integer
+dayUseYn String
+dueOutYn String
+insertUser Integer
+insertDate LocalDate
+updateUser Integer
+updateDate LocalDate
+insertActionInstanceId Integer
+dmlSeqNo Integer
+extSeqNo Integer
+extSegNo Integer
+cribs Integer
+extraBeds Integer
+allotmentRecordType String
+blockResort String
+blockId Integer
+turndownStatus String
+awdUpgrFrom String
+awdUpgrTo String
+hkExpectedServiceTime String
+roomInstructions String
+}
+
+entity ReservationDailyElementName{
+resort String
+resvNameId Integer
+reservationDate LocalDate
+resvDailyElSeq Integer
+travelAgentId Integer
+companyId Integer
+sourceId Integer
+groupId Integer
+sharePaymentType String
+shareAmount BigDecimal
+sharePrcnt BigDecimal
+adults Integer
+children Integer
+discountAmt BigDecimal
+discountPrcnt BigDecimal
+discountReasonCode String
+fixedRateYn String
+baseRateAmount BigDecimal
+autoPostAmount BigDecimal
+sharePriority Integer
+insertUser Integer
+insertDate LocalDate
+updateUser Integer
+updateDate LocalDate
+lastShareCalculation String
+insertActionInstanceId Integer
+dmlSeqNo Integer
+netRoomAmt BigDecimal
+roomTax BigDecimal
+pkgAmt BigDecimal
+pkgTax BigDecimal
+grossRateAmt BigDecimal
+adultsTaxFree Integer
+childrenTaxFree Integer
+children1 Integer
+children2 Integer
+children3 Integer
+rateCode String
+currencyCode String
+exchangePostingType String
+membershipPoints Integer
+children4 Integer
+children5 Integer
+commissionCode String
+awardCode1 String
+awardCode2 String
+awardCode3 String
+awardCode4 String
+awardCode5 String
+awardVoucher1 String
+awardVoucher2 String
+awardVoucher3 String
+awardVoucher4 String
+awardVoucher5 String
+doNotMoveYn String
+awardCode String
+points Integer
+upsellCharge BigDecimal
+pointsEligibilityCode String
+commissionPaid BigDecimal
+resvContactId Integer
+billingContactId Integer
+shareAmountOriginal BigDecimal
+referralYn String
+bxgyDiscountYn String
+commissionableYn String
+basedOnRule String
+}
+
+entity ReservationStatDaily{
+resort String
+businessDate LocalDate
+nameId Integer
+rateCode String
+sourceCode String
+marketCode String
+roomCategory String
+companyId Integer
+agentId Integer
+groupId Integer
+sourceProfId Integer
+resvStatus String
+truncBeginDate LocalDate
+truncEndDate LocalDate
+resvNameId Integer
+quantity Integer
+physicalQuantity Integer
+dueOutYn String
+roomResvStatus String
+adults Integer
+children Integer
+roomAdults Integer
+roomChildren Integer
+primaryYn Integer
+allotmentHeaderId Integer
+roomRevenue BigDecimal
+foodRevenue BigDecimal
+packageRoomRevenue BigDecimal
+packageFoodRevenue BigDecimal
+totalRoomTax BigDecimal
+totalFoodTax BigDecimal
+totalPackageRevenue BigDecimal
+totalRevenue BigDecimal
+totalTax BigDecimal
+insertDate LocalDate
+originalEndDate LocalDate
+walkinYn String
+reservationDate LocalDate
+roomClass String
+vipStatus String
+cancellationDate LocalDate
+birthDate LocalDate
+room String
+membershipId Integer
+contactId Integer
+rateCategory String
+marketMainGroup String
+sourceMainGroup String
+channel String
+country String
+regionCode String
+nationality String
+psuedoRoomYn String
+adultsTaxFree Integer
+childrenTaxFree Integer
+stayRooms Integer
+stayPersons Integer
+stayAdults Integer
+stayChildren Integer
+arrRooms Integer
+arrPersons Integer
+depRooms Integer
+depPersons Integer
+dayUseRooms Integer
+dayUsePersons Integer
+cancelledRooms Integer
+cancelledPersons Integer
+noShowRooms Integer
+noShowPersons Integer
+singleOccupancy Integer
+multipleOccupancy Integer
+cribs Integer
+extraBeds Integer
+otherRevenue BigDecimal
+packageOtherRevenue BigDecimal
+totalOtherTax BigDecimal
+countryMainGroup String
+state String
+fiscalRegionCode String
+nonRevenue BigDecimal
+packageNonRevenue BigDecimal
+totalNonRevenueTax BigDecimal
+prRoomRevenue BigDecimal
+prFoodRevenue BigDecimal
+prPackageRoomRevenue BigDecimal
+prPackageFoodRevenue BigDecimal
+prTotalRoomTax BigDecimal
+prTotalFoodTax BigDecimal
+prTotalPackageRevenue BigDecimal
+prTotalRevenue BigDecimal
+prTotalTax BigDecimal
+prOtherRevenue BigDecimal
+prPackageOtherRevenue BigDecimal
+prTotalOtherTax BigDecimal
+prNonRevenue BigDecimal
+prPackageNonRevenue BigDecimal
+prTotalNonRevenueTax BigDecimal
+nights Integer
+noOfStays Integer
+reservationNights Integer
+reservationArrivals Integer
+reservationNoOfStays Integer
+dayUseReservations Integer
+cancelledReservations Integer
+noShowReservations Integer
+city String
+zipCode String
+district String
+cashRoomNts Integer
+compRoomNts Integer
+cashRoomRevenue BigDecimal
+compRoomRevenue BigDecimal
+resInsertSource String
+resInsertSourceType String
+children1 Integer
+children2 Integer
+children3 Integer
+children4 Integer
+children5 Integer
+ffMembershipType String
+fgMembershipType String
+promotionCode String
+ownerFfFlag String
+ownerRentalFlag String
+centralCurrencyCode String
+centralExchangeRate BigDecimal
+bookedRoomCategory String
+businessDateCreated LocalDate
+rateAmount BigDecimal
+parentCompanyId Integer
+houseUseYn String
+complimentaryYn String
+biResvNameId Integer
+advFoodRevenue BigDecimal
+advNonRevenue BigDecimal
+advOtherRevenue BigDecimal
+advRoomRevenue BigDecimal
+advTotalFoodTax BigDecimal
+advTotalNonRevenueTax BigDecimal
+advTotalOtherTax BigDecimal
+advTotalRevenue BigDecimal
+advTotalRoomTax BigDecimal
+advTotalTax BigDecimal
+prAdvFoodRevenue BigDecimal
+prAdvNonRevenue BigDecimal
+prAdvOtherRevenue BigDecimal
+prAdvRoomRevenue BigDecimal
+prAdvTotalFoodTax BigDecimal
+prAdvTotalNonRevenueTax BigDecimal
+prAdvTotalOtherTax BigDecimal
+prAdvTotalRevenue BigDecimal
+prAdvTotalRoomTax BigDecimal
+prAdvTotalTax BigDecimal
+upsoldRevenue BigDecimal
+flgdRoomRevenue BigDecimal
+flgdFoodRevenue BigDecimal
+flgdNonRevenue BigDecimal
+flgdOtherRevenue BigDecimal
+flgdTotalRoomTax BigDecimal
+flgdTotalFoodTax BigDecimal
+flgdTotalNonRevenueTax BigDecimal
+flgdTotalOtherTax BigDecimal
+flgdTotalRevenue BigDecimal
+flgdTotalTax BigDecimal
+contactYn String
+extendedStayTier Integer
+rsAdvTotalRevenue BigDecimal
+rsAdvRoomRevenue BigDecimal
+rsAdvFoodRevenue BigDecimal
+rsAdvOtherRevenue BigDecimal
+rsAdvNonRevenue BigDecimal
+rsAdvTotalTax BigDecimal
+rsAdvRoomTax BigDecimal
+rsAdvFoodTax BigDecimal
+rsAdvOtherTax BigDecimal
+rsAdvNonRevenueTax BigDecimal
+updateDate LocalDate
+guid String
+}
+
+entity Resort{
+id String
+resort String
+beginDate ZonedDateTime
+checkInTime ZonedDateTime
+checkOutTime ZonedDateTime
+videoCoStart ZonedDateTime
+videoCoStop ZonedDateTime
+insertDate ZonedDateTime
+updateDate ZonedDateTime
+expiryDate ZonedDateTime
+endDate ZonedDateTime
+fiscalStartDate ZonedDateTime
+fiscalEndDate ZonedDateTime
+reconcileDate ZonedDateTime
+paymentDate ZonedDateTime
+keepAvailability Integer
+budgetMonth Integer
+saveProfiles Integer
+longStayControl Integer
+creditLimit Integer
+numberRooms Integer
+numberFloors Integer
+numberBeds Integer
+rhythmSheets Integer
+rhythmTowels Integer
+warningAmount Integer
+decimalPlaces Integer
+font Integer
+copies Integer
+defaultFolioStyle Integer
+individualRoomWarning Integer
+groupRoomWarning Integer
+agingLevel1 Integer
+agingLevel2 Integer
+agingLevel3 Integer
+agingLevel4 Integer
+agingLevel5 Integer
+zeroInvPurDays Integer
+minDaysBet2ReminderLetter Integer
+insertUser Integer
+updateUser Integer
+currencyDecimals Integer
+nameIdLink Integer
+sglRate1 Integer
+sglRate2 Integer
+dblRate1 Integer
+dblRate2 Integer
+tplRate1 Integer
+tplRate2 Integer
+suiRate1 Integer
+suiRate2 Integer
+meetSpace Integer
+imgHotelId Integer
+imgDirectionId Integer
+imgMapId Integer
+scriptId Integer
+comNameXrefId Integer
+pathId Integer
+xresortNumber Integer
+maxCreditDays Integer
+currencyDivisor Integer
+latitude Integer
+longitude Integer
+qtySingleRooms Integer
+qtyDoubleRooms Integer
+qtyTwinRooms Integer
+qtySuites Integer
+qtyGuestRoomFloors Integer
+qtyGuestElevators Integer
+qtyNonSmokingRooms Integer
+qtyConnectingRooms Integer
+qtyHandicappedRooms Integer
+qtyFamilyRooms Integer
+maxAdultsFamilyRoom Integer
+maxChildrenFamilyRoom Integer
+restaurant Integer
+meetRooms Integer
+totRooms Integer
+brSeats Integer
+meetSeats Integer
+maxNoNights Integer
+awardsTimeout Integer
+guestLookupTimeout Integer
+wakeUpDelay Integer
+maxOccupancy Integer
+inactiveDaysForGuestProfil Integer
+perReservationRoomLimit Integer
+licRoomInfo String
+thousandSeparator String
+dateSeparator String
+arAcctNoMandYn String
+exchangePostingType String
+inventoryYn String
+allowLoginYn String
+accessCode String
+disableLoginYn String
+intTaxIncludedYn String
+downloadRestYn String
+translateMulticharYn String
+externalScYn String
+sendLeadAsBookingYn String
+mbsSupportedYn String
+quotedCurrency String
+comMethod String
+email String
+genmgr String
+dirsales String
+leadsend String
+airport String
+comAddress String
+season1 String
+season2 String
+season3 String
+season4 String
+season5 String
+floorNumExecutiveFloor String
+crsResort String
+postCode String
+defaultReservationType String
+block String
+currencySymbol String
+sourceCommission String
+taCommission String
+baseLanguage String
+folioLanguage1 String
+folioLanguage2 String
+folioLanguage3 String
+folioLanguage4 String
+packageProfit String
+packageLoss String
+decimalSeparator String
+shortDateFormat String
+longDateFormat String
+passerbySource String
+passerbyMarket String
+arCompany String
+arAgent String
+arGroups String
+arIndividuals String
+arAcctNoFormat String
+allowancePeriodAdj String
+currencyCode String
+turnawayCode String
+summCurrencyCode String
+defaultPropertyAddress String
+defaultGuestAddress String
+licenseCode String
+timeFormat String
+chainCode String
+resortType String
+hotelType String
+ownership String
+arBalTrxCode String
+arCreditTrxCode String
+arSettleCode String
+cashShiftDrop String
+checkExgPaidout String
+checkShiftDrop String
+checkTrxcode String
+currencyExgPaidout String
+depositLedTrxCode String
+fiscalPeriodType String
+defaultCommissionPercentage String
+defaultPrepaidComm String
+defaultTrxCommCode String
+configurationMode String
+weekendDays String
+defaultGroupsRateCode String
+defaultPostingRoom String
+dfltPkgTranCode String
+dfltTranCodeRateCode String
+defaultRateCode String
+croCode String
+flowCode String
+extPropertyCode String
+opusCurrencyCode String
+destinationId String
+flags String
+touristNumber String
+cateringCurrencyCode String
+defaultRatecodeRack String
+defaultRatecodePcr String
+fnsTier String
+brandCode String
+webaddress String
+vatId String
+street String
+hotelFc String
+meetingFc String
+arTypewriter String
+fileTransferFormat String
+confirmRegcardPrinter String
+directions String
+propinfoUrl String
+roomAmenity String
+shopDescription String
+propPicUrl String
+propMapUrl String
+extExpFileLocation String
+curtainColor String
+countryCode String
+state String
+dateForAging String
+regionCode String
+city String
+telephone String
+fax String
+tollfree String
+defaultPrinter String
+videocheckoutPrinter String
+companyAddressType String
+companyPhoneType String
+defaultFaxType String
+defaultMembershipType String
+individualAddressType String
+individualPhoneType String
+notes String
+blackoutPeriodNotes String
+sglNum String
+dblNum String
+tplNum String
+suiNum String
+airportDistance String
+airportTime String
+brArea String
+name String
+legalOwner String
+hotelId String
+faxNoFormat String
+telephoneNoFormat String
+localCurrencyFormat String
+dutyManagerPager String
+defaultRegistrationCard String
+nightAuditCashierId String
+hotelCode String
+path String
+timezoneRegion String
+cateringCurrencyFormat String
+expHotelCode String
+}
+
+entity ResortOriginsOfBooking{
+resort String
+sourceCode String
+parentSourceCode String
+description String
+insertUser Integer
+insertDate LocalDate
+updateUser Integer
+updateDate LocalDate
+inactiveDate LocalDate
+sellSequence Integer
+scOrderby Integer
+internetSalesYn String
+}
+
+entity ResortRoomCategory{
+resort String
+roomCategory String
+roomClass String
+numberRooms Integer
+shortDescription String
+longDescription String
+compiled String
+psuedoRoomType String
+activeDate LocalDate
+inactiveDate LocalDate
+replacesCategory String
+orderBy Integer
+maxOccupancy Integer
+maxRollaways Integer
+rateCategory String
+label String
+genericFlag String
+suiteYn String
+meetingroomYn String
+insertUser Integer
+insertDate LocalDate
+updateUser Integer
+updateDate LocalDate
+rateCode String
+rateAmount BigDecimal
+defOccupancy Integer
+imageId Integer
+pseudoYn String
+sendToInterfaceYn String
+yieldableYn String
+yieldCategory String
+housekeeping String
+canDeleteYn String
+roominfoUrl String
+ownerYn String
+autoIncludeYn String
+initialRoundUp Integer
+increments Integer
+rotationGroup String
+salesFlag String
+autoRoomAssignYn String
+upsellYn String
+ormsUpsellRank Integer
+ormsUpsellAmt BigDecimal
+ormsDrxtraAdult Integer
+ormsDrxtraChild Integer
+maxOccupancyAdults Integer
+maxOccupancyChildren Integer
+roomPool String
+memberAwardRoomGrp String
+ormsDrxtra2ndAdult Integer
+ormsDrtier1 Integer
+ormsDrtier2 Integer
+ormsDrtier3 Integer
+autoCheckinYn String
+rateFloor BigDecimal
+maxFixBedOccupancy Integer
+maintenanceYn String
+smokingPreference String
+sLabel String
+sBedtype String
+sellThruRuleYn String
+crsDescription String
+evisitorFacilityId String
+minOccupancy Integer
+accessibleYn String
+}
+
+entity ReservationName{
+resort String
+resvNameId Integer
+nameId Integer
+nameUsageType String
+contactNameId Integer
+insertDate LocalDate
+insertUser Integer
+updateUser Integer
+updateDate LocalDate
+resvStatus String
+commissionCode String
+addressId Integer
+phoneId Integer
+faxYn String
+mailYn String
+printRateYn String
+reportId String
+resvNo Integer
+confirmationNo String
+beginDate LocalDate
+endDate LocalDate
+faxId Integer
+emailId Integer
+emailYn String
+consumerYn String
+creditCardId Integer
+financiallyResponsibleYn String
+paymentMethod String
+intermediaryYn String
+postingAllowedYn String
+displayColor String
+actualCheckInDate LocalDate
+truncActualCheckInDate LocalDate
+actualCheckOutDate LocalDate
+truncActualCheckOutDate LocalDate
+creditLimit Integer
+authorizedBy Integer
+parentResvNameId Integer
+cancellationNo String
+cancellationReasonCode String
+cancellationReasonDesc String
+arrivalTransportType String
+arrivalStationCode String
+arrivalCarrierCode String
+arrivalTransportCode String
+arrivalDateTime LocalDate
+arrivalEstimateTime LocalDate
+arrivalTranportationYn String
+arrivalComments String
+departureTransportType String
+departureStationCode String
+departureCarrierCode String
+departureTransportCode String
+departureDateTime LocalDate
+departureEstimateTime LocalDate
+departureTransportationYn String
+departureComments String
+cancellationDate LocalDate
+guaranteeCode String
+wlReasonDescription String
+wlReasonCode String
+wlPriority String
+doNotMoveRoom String
+externalReference String
+partyCode String
+walkinYn String
+originalEndDate LocalDate
+approvalAmountCalcMethod Integer
+amountPercent Integer
+nameTaxType String
+taxExemptNo String
+roomFeatures String
+wlTelephoneNo String
+videoCheckoutYn String
+discountAmt Integer
+discountPrcnt Integer
+discountReasonCode String
+commissionPaid Integer
+commissionHoldCode String
+truncBeginDate LocalDate
+truncEndDate LocalDate
+sguestName String
+membershipId Integer
+udfc01 String
+udfc02 String
+udfc03 String
+udfc04 String
+udfc05 String
+udfc06 String
+udfc07 String
+udfc08 String
+udfc09 String
+udfc10 String
+udfc11 String
+udfc12 String
+udfc13 String
+udfc14 String
+udfc15 String
+udfc16 String
+udfc17 String
+udfc18 String
+udfc19 String
+udfc20 String
+udfc21 String
+udfc22 String
+udfc23 String
+udfc24 String
+udfc25 String
+udfc26 String
+udfc27 String
+udfc28 String
+udfc29 String
+udfc30 String
+udfc31 String
+udfc32 String
+udfc33 String
+udfc34 String
+udfc35 String
+udfc36 String
+udfc37 String
+udfc38 String
+udfc39 String
+udfc40 String
+udfn01 Integer
+udfn02 Integer
+udfn03 Integer
+udfn04 Integer
+udfn05 Integer
+udfn06 Integer
+udfn07 Integer
+udfn08 Integer
+udfn09 Integer
+udfn10 Integer
+udfn11 Integer
+udfn12 Integer
+udfn13 Integer
+udfn14 Integer
+udfn15 Integer
+udfn16 Integer
+udfn17 Integer
+udfn18 Integer
+udfn19 Integer
+udfn20 Integer
+udfn21 Integer
+udfn22 Integer
+udfn23 Integer
+udfn24 Integer
+udfn25 Integer
+udfn26 Integer
+udfn27 Integer
+udfn28 Integer
+udfn29 Integer
+udfn30 Integer
+udfn31 Integer
+udfn32 Integer
+udfn33 Integer
+udfn34 Integer
+udfn35 Integer
+udfn36 Integer
+udfn37 Integer
+udfn38 Integer
+udfn39 Integer
+udfn40 Integer
+udfd01 LocalDate
+udfd02 LocalDate
+udfd03 LocalDate
+udfd04 LocalDate
+udfd05 LocalDate
+udfd06 LocalDate
+udfd07 LocalDate
+udfd08 LocalDate
+udfd09 LocalDate
+udfd10 LocalDate
+insertActionInstanceId Integer
+dmlSeqNo Integer
+businessDateCreated LocalDate
+turndownYn String
+roomInstructions String
+roomServiceTime String
+eventId Integer
+revenueTypeCode String
+hurdle Integer
+hurdleOverride String
+rateableValue Integer
+restrictionOverride String
+yieldableYn String
+sguestFirstname String
+guestLastName String
+guestFirstName String
+guestLastNameSdx String
+guestFirstNameSdx String
+channel String
+shareSeqNo Integer
+guestSignature String
+extensionId Integer
+resvContactId Integer
+billingContactId Integer
+resInsertSource String
+resInsertSourceType String
+masterShare String
+registrationCardNo String
+tiad String
+purposeOfStay String
+reinstateDate LocalDate
+purgeDate LocalDate
+lastSettleDate LocalDate
+lastPeriodicFolioDate LocalDate
+periodicFolioFreq Integer
+confirmationLegNo Integer
+guestStatus String
+guestType String
+checkinDuration Integer
+authorizerId Integer
+lastOnlinePrintSeq Integer
+entryPoint String
+entryDate LocalDate
+pseudoMemType String
+pseudoMemTotalPoints Integer
+folioText1 String
+folioText2 String
+compTypeCode String
+uniCardId String
+expCheckinresId Integer
+originalBeginDate LocalDate
+ownerFfFlag String
+commissionPayoutTo String
+preChargingYn String
+postChargingYn String
+postCoFlag String
+folioCloseDate LocalDate
+scheduleCheckoutYn String
+customReference String
+guaranteeCodePreCi String
+awardMembershipId Integer
+esignedRegCardName String
+statisticalRoomType Integer
+statisticalRateTier Integer
+ymCode String
+keyValidUntil LocalDate
+preRegisteredYn String
+taxRegistrationNo Integer
+visaNumber String
+visaIssueDate LocalDate
+visaExpirationDate LocalDate
+taxNoOfStays Integer
+asbProratedYn String
+autoSettleDays Integer
+autoSettleYn String
+splitFromResvNameId Integer
+nextDestination String
+dateOfArrivalInCountry LocalDate
+preArrReviewedDt LocalDate
+preArrReviewedUser Integer
+bonusCheckId Integer
+mobileAudioKeyYn String
+directBillVerifyResponse String
+addresseeNameId Integer
+superSearchIndexText String
+autoCheckinYn String
+emailFolioYn String
+emailAddress String
+spgUpgradeConfirmedRoomtype String
+spgUpgradeReasonCode String
+spgSuiteNightAwardStatus String
+spgDiscloseRoomTypeYn String
+amenityEligibleYn String
+amenityLevelCode String
+baseRateCurrencyCode String
+baseRateCode String
+localBaseRateAmount Integer
+phoneDisplayNameYn String
+resortChargeNumber String
+mobileChkoutAllowed String
+mobileViewFolioAllowed String
+hkExpectedServiceTime String
+eligibleForUpgradeYn String
+beginSystemDateTime LocalDate
+mobileCheckinAllowedYn String
+quoteId String
+manualCheckoutStatus String
+mobilePreferredCurrency String
+mobileActionAlertIssued LocalDate
+externalEfolioYn String
+optInBatchFolYn String
+folioAddrElementId Integer
+operaEsignedRegCardYn String
+resvGuid String
+advanceCheckedInYn String
+expectedTimeOfReturn LocalDate
+etrComments String
+optedForCommYn String
+creditLimitAutoPayAllowYn String
+}
+
+
+entity Name {
+
+id Integer
+
+nameId Integer
+
+nameCode String
+
+insertUser Integer
+
+insertDate LocalDate
+
+updateUser Integer
+
+updateDate LocalDate
+
+primaryNameId Integer
+
+repeatGuestId String
+
+mailList String
+
+mailType String
+
+followOn String
+
+businessTitle String
+
+inactiveDate LocalDate
+
+arcUpdateDate LocalDate
+
+updateFaxDate LocalDate
+
+birthDate LocalDate
+
+collectionUserId Integer
+
+company String
+
+soundExCompany String
+
+legalCompany String
+
+first String
+
+middle String
+
+last String
+
+nickname String
+
+title String
+
+soundExLast String
+
+externalReferenceRequ String
+
+vipStatus String
+
+vipAuthorization String
+
+billingProfileCode String
+
+rateStructure String
+
+nameComment String
+
+tourOperatorType String
+
+region String
+
+typeOf1099 String
+
+tax1No String
+
+companyNameId Integer
+
+externalReferenceRequired String
+
+vendorId Integer
+
+vendorSiteId Integer
+
+arcOfficeType String
+
+tax2No String
+
+arcMailFlag String
+
+name2 String
+
+name3 String
+
+salesrep String
+
+tracecode String
+
+geographicRegion String
+
+guestClassification String
+
+primaryAddressId Integer
+
+primaryPhoneId Integer
+
+taxExemptStatus String
+
+gdsName String
+
+gdsTransactionNo String
+
+nationality String
+
+language String
+
+salutation String
+
+passport String
+
+historyYn String
+
+resvContact String
+
+contractNo String
+
+contractRecvDate LocalDate
+
+acctContact String
+
+priority String
+
+industryCode String
+
+roomsPotential String
+
+competitionCode String
+
+scope String
+
+scopeCity String
+
+territory String
+
+actioncode String
+
+activeYn String
+
+masterAccountYn String
+
+nameType String
+
+sname String
+
+nameTaxType String
+
+sfirst String
+
+arNo String
+
+availabilityOverride String
+
+billingCode String
+
+cashBlInd String
+
+blMsg String
+
+currencyCode String
+
+commissionCode String
+
+holdCode String
+
+interest String
+
+summRefCc String
+
+iataCompType String
+
+srepCode String
+
+accountsource String
+
+markets String
+
+productInterest String
+
+keyword String
+
+letterGreeting String
+
+influence String
+
+deptId String
+
+department String
+
+contactYn String
+
+accountType String
+
+downloadResort String
+
+downloadSrep Integer
+
+downloadDate LocalDate
+
+uploadDate LocalDate
+
+laptopChange Integer
+
+crsNameid Integer
+
+commPayCentral String
+
+ccProfileYn String
+
+gender String
+
+birthPlace String
+
+birthCountry String
+
+profession String
+
+idType String
+
+idNumber String
+
+idDate LocalDate
+
+idPlace String
+
+idCountry String
+
+udfc01 String
+
+udfc02 String
+
+udfc03 String
+
+udfc04 String
+
+udfc05 String
+
+udfc06 String
+
+udfc07 String
+
+udfc08 String
+
+udfc09 String
+
+udfc10 String
+
+udfc11 String
+
+udfc12 String
+
+udfc13 String
+
+udfc14 String
+
+udfc15 String
+
+udfc16 String
+
+udfc17 String
+
+udfc18 String
+
+udfc19 String
+
+udfc20 String
+
+udfc21 String
+
+udfc22 String
+
+udfc23 String
+
+udfc24 String
+
+udfc25 String
+
+udfc26 String
+
+udfc27 String
+
+udfc28 String
+
+udfc29 String
+
+udfc30 String
+
+udfc31 String
+
+udfc32 String
+
+udfc33 String
+
+udfc34 String
+
+udfc35 String
+
+udfc36 String
+
+udfc37 String
+
+udfc38 String
+
+udfc39 String
+
+udfc40 String
+
+udfn01 Integer
+
+udfn02 Integer
+
+udfn03 Integer
+
+udfn04 Integer
+
+udfn05 Integer
+
+udfn06 Integer
+
+udfn07 Integer
+
+udfn08 Integer
+
+udfn09 Integer
+
+udfn10 Integer
+
+udfn11 Integer
+
+udfn12 Integer
+
+udfn13 Integer
+
+udfn14 Integer
+
+udfn15 Integer
+
+udfn16 Integer
+
+udfn17 Integer
+
+udfn18 Integer
+
+udfn19 Integer
+
+udfn20 Integer
+
+udfn21 Integer
+
+udfn22 Integer
+
+udfn23 Integer
+
+udfn24 Integer
+
+udfn25 Integer
+
+udfn26 Integer
+
+udfn27 Integer
+
+udfn28 Integer
+
+udfn29 Integer
+
+udfn30 Integer
+
+udfn31 Integer
+
+udfn32 Integer
+
+udfn33 Integer
+
+udfn34 Integer
+
+udfn35 Integer
+
+udfn36 Integer
+
+udfn37 Integer
+
+udfn38 Integer
+
+udfn39 Integer
+
+udfn40 Integer
+
+udfd01 LocalDate
+
+udfd02 LocalDate
+
+udfd03 LocalDate
+
+udfd04 LocalDate
+
+udfd05 LocalDate
+
+udfd06 LocalDate
+
+udfd07 LocalDate
+
+udfd08 LocalDate
+
+udfd09 LocalDate
+
+udfd10 LocalDate
+
+udfd11 LocalDate
+
+udfd12 LocalDate
+
+udfd13 LocalDate
+
+udfd14 LocalDate
+
+udfd15 LocalDate
+
+udfd16 LocalDate
+
+udfd17 LocalDate
+
+udfd18 LocalDate
+
+udfd19 LocalDate
+
+udfd20 LocalDate
+
+paymentDueDays Integer
+
+suffix String
+
+externalId String
+
+guestPrivYn String
+
+emailYn String
+
+mailYn String
+
+indexName String
+
+xlastName String
+
+xfirstName String
+
+xcompanyName String
+
+xtitle String
+
+xsalutation String
+
+sxname String
+
+sxfirstName String
+
+lastUpdatedResort String
+
+envelopeGreeting String
+
+xenvelopeGreeting String
+
+directBillBatchType String
+
+resortRegistered String
+
+taxOffice String
+
+taxType String
+
+taxCategory String
+
+preferredRoomNo String
+
+phoneYn String
+
+smsYn String
+
+isProtected String
+
+xlanguage String
+
+marketResearchYn String
+
+thirdPartyYn String
+
+autoenrollMemberYn String
+
+chainCode String
+
+companyGroupId String
+
+includeIn1099Yn String
+
+creditRating String
+
+titleSuffix Integer
+
+inactiveReason String
+
+iataConsortia String
+
+psuedoProfileYn String
+
+profilePrivacyFlg String
+
+replaceAddress String
+
+alienRegistrationNo String
+
+immigrationStatus String
+
+visaValidityType String
+
+idDocumentAttachId Integer
+
+superSearchIndexText String
+
+birthDateStr String
+
+origNameId Integer
+
+dOptInMailListFlg String
+
+dOptInMarketResearchFlg String
+
+dOptInThirdPartyFlg String
+
+dOptInAutoenrollMemberFlg String
+
+dOptInEmailFlg String
+
+dOptInPhoneFlg String
+
+dOptInSmsFlg String
+
+dOptInGuestPrivFlg String
+
+arCreditLimitYn String
+
+profileCreditLimit Integer
+
+xmiddleName String
+
+eInvoiceLiableYn String
+
+eInvLiableLastUpdated LocalDate
+
+internalBillYn String
+
+compPreApprovalRequiredYn String
+
+anonymizationStatus String
+
+anonymizationDate LocalDate
+
+}
+
+
+paginate * with pagination
+
+// Set service options to all except few
+service all with serviceImpl

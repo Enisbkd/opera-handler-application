@@ -1,0 +1,1209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <!--
+        Added the entity ReservationName.
+    -->
+    <changeSet id="20240502082207-1" author="jhipster">
+        <createTable tableName="reservation_name">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="resort" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="resv_name_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="name_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="name_usage_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="contact_name_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="insert_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="insert_user" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="update_user" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="update_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="resv_status" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="commission_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="address_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="phone_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="fax_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="mail_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="print_rate_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="report_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="resv_no" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="confirmation_no" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="begin_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="end_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="fax_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="email_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="email_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="consumer_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="credit_card_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="financially_responsible_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="payment_method" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="intermediary_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="posting_allowed_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="display_color" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="actual_check_in_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="trunc_actual_check_in_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="actual_check_out_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="trunc_actual_check_out_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="credit_limit" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="authorized_by" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="parent_resv_name_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="cancellation_no" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="cancellation_reason_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="cancellation_reason_desc" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="arrival_transport_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="arrival_station_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="arrival_carrier_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="arrival_transport_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="arrival_date_time" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="arrival_estimate_time" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="arrival_tranportation_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="arrival_comments" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="departure_transport_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="departure_station_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="departure_carrier_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="departure_transport_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="departure_date_time" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="departure_estimate_time" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="departure_transportation_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="departure_comments" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="cancellation_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="guarantee_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="wl_reason_description" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="wl_reason_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="wl_priority" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="do_not_move_room" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="external_reference" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="party_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="walkin_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="original_end_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="approval_amount_calc_method" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="amount_percent" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="name_tax_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tax_exempt_no" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="room_features" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="wl_telephone_no" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="video_checkout_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="discount_amt" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="discount_prcnt" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="discount_reason_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="commission_paid" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="commission_hold_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="trunc_begin_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="trunc_end_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="sguest_name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="membership_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_01" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_02" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_03" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_04" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_05" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_06" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_07" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_08" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_09" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_10" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_11" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_12" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_13" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_14" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_15" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_16" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_17" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_18" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_19" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_20" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_21" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_22" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_23" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_24" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_25" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_26" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_27" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_28" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_29" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_30" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_31" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_32" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_33" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_34" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_35" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_36" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_37" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_38" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_39" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_40" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_01" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_02" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_03" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_04" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_05" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_06" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_07" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_08" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_09" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_10" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_11" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_12" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_13" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_14" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_15" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_16" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_17" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_18" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_19" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_20" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_21" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_22" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_23" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_24" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_25" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_26" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_27" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_28" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_29" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_30" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_31" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_32" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_33" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_34" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_35" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_36" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_37" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_38" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_39" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_40" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfd_01" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfd_02" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfd_03" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfd_04" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfd_05" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfd_06" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfd_07" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfd_08" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfd_09" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfd_10" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="insert_action_instance_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="dml_seq_no" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="business_date_created" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="turndown_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="room_instructions" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="room_service_time" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="event_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="revenue_type_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="hurdle" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="hurdle_override" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="rateable_value" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="restriction_override" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="yieldable_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="sguest_firstname" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="guest_last_name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="guest_first_name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="guest_last_name_sdx" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="guest_first_name_sdx" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="channel" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="share_seq_no" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="guest_signature" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="extension_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="resv_contact_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="billing_contact_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="res_insert_source" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="res_insert_source_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="master_share" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="registration_card_no" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tiad" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="purpose_of_stay" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="reinstate_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="purge_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="last_settle_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="last_periodic_folio_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="periodic_folio_freq" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="confirmation_leg_no" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="guest_status" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="guest_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="checkin_duration" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="authorizer_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="last_online_print_seq" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="entry_point" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="entry_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="pseudo_mem_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="pseudo_mem_total_points" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="folio_text_1" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="folio_text_2" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="comp_type_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="uni_card_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="exp_checkinres_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="original_begin_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="owner_ff_flag" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="commission_payout_to" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="pre_charging_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="post_charging_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="post_co_flag" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="folio_close_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="schedule_checkout_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="custom_reference" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="guarantee_code_pre_ci" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="award_membership_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="esigned_reg_card_name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="statistical_room_type" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="statistical_rate_tier" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="ym_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="key_valid_until" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="pre_registered_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tax_registration_no" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="visa_number" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="visa_issue_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="visa_expiration_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="tax_no_of_stays" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="asb_prorated_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="auto_settle_days" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="auto_settle_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="split_from_resv_name_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="next_destination" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="date_of_arrival_in_country" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="pre_arr_reviewed_dt" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="pre_arr_reviewed_user" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="bonus_check_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="mobile_audio_key_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="direct_bill_verify_response" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="addressee_name_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="super_search_index_text" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="auto_checkin_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="email_folio_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="email_address" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="spg_upgrade_confirmed_roomtype" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="spg_upgrade_reason_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="spg_suite_night_award_status" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="spg_disclose_room_type_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="amenity_eligible_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="amenity_level_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="base_rate_currency_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="base_rate_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="local_base_rate_amount" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="phone_display_name_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="resort_charge_number" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="mobile_chkout_allowed" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="mobile_view_folio_allowed" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="hk_expected_service_time" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="eligible_for_upgrade_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="begin_system_date_time" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="mobile_checkin_allowed_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="quote_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="manual_checkout_status" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="mobile_preferred_currency" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="mobile_action_alert_issued" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="external_efolio_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="opt_in_batch_fol_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="folio_addr_element_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="opera_esigned_reg_card_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="resv_guid" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="advance_checked_in_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="expected_time_of_return" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="etr_comments" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="opted_for_comm_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="credit_limit_auto_pay_allow_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
+        </createTable>
+    </changeSet>
+
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here -->
+
+    <!--
+        Load sample data generated with Faker.js
+        - This data can be easily edited using a CSV editor (or even MS Excel) and
+          is located in the 'src/main/resources/config/liquibase/fake-data' directory
+        - By default this data is applied when running with the JHipster 'dev' profile.
+          This can be customized by adding or removing 'faker' in the 'spring.liquibase.contexts'
+          Spring Boot configuration key.
+    -->
+    <changeSet id="20240502082207-1-data" author="jhipster" context="faker">
+        <loadData
+                  file="config/liquibase/fake-data/reservation_name.csv"
+                  separator=";"
+                  tableName="reservation_name"
+                  usePreparedStatements="true">
+            <column name="id" type="numeric"/>
+            <column name="resort" type="string"/>
+            <column name="resv_name_id" type="numeric"/>
+            <column name="name_id" type="numeric"/>
+            <column name="name_usage_type" type="string"/>
+            <column name="contact_name_id" type="numeric"/>
+            <column name="insert_date" type="date"/>
+            <column name="insert_user" type="numeric"/>
+            <column name="update_user" type="numeric"/>
+            <column name="update_date" type="date"/>
+            <column name="resv_status" type="string"/>
+            <column name="commission_code" type="string"/>
+            <column name="address_id" type="numeric"/>
+            <column name="phone_id" type="numeric"/>
+            <column name="fax_yn" type="string"/>
+            <column name="mail_yn" type="string"/>
+            <column name="print_rate_yn" type="string"/>
+            <column name="report_id" type="string"/>
+            <column name="resv_no" type="numeric"/>
+            <column name="confirmation_no" type="string"/>
+            <column name="begin_date" type="date"/>
+            <column name="end_date" type="date"/>
+            <column name="fax_id" type="numeric"/>
+            <column name="email_id" type="numeric"/>
+            <column name="email_yn" type="string"/>
+            <column name="consumer_yn" type="string"/>
+            <column name="credit_card_id" type="numeric"/>
+            <column name="financially_responsible_yn" type="string"/>
+            <column name="payment_method" type="string"/>
+            <column name="intermediary_yn" type="string"/>
+            <column name="posting_allowed_yn" type="string"/>
+            <column name="display_color" type="string"/>
+            <column name="actual_check_in_date" type="date"/>
+            <column name="trunc_actual_check_in_date" type="date"/>
+            <column name="actual_check_out_date" type="date"/>
+            <column name="trunc_actual_check_out_date" type="date"/>
+            <column name="credit_limit" type="numeric"/>
+            <column name="authorized_by" type="numeric"/>
+            <column name="parent_resv_name_id" type="numeric"/>
+            <column name="cancellation_no" type="string"/>
+            <column name="cancellation_reason_code" type="string"/>
+            <column name="cancellation_reason_desc" type="string"/>
+            <column name="arrival_transport_type" type="string"/>
+            <column name="arrival_station_code" type="string"/>
+            <column name="arrival_carrier_code" type="string"/>
+            <column name="arrival_transport_code" type="string"/>
+            <column name="arrival_date_time" type="date"/>
+            <column name="arrival_estimate_time" type="date"/>
+            <column name="arrival_tranportation_yn" type="string"/>
+            <column name="arrival_comments" type="string"/>
+            <column name="departure_transport_type" type="string"/>
+            <column name="departure_station_code" type="string"/>
+            <column name="departure_carrier_code" type="string"/>
+            <column name="departure_transport_code" type="string"/>
+            <column name="departure_date_time" type="date"/>
+            <column name="departure_estimate_time" type="date"/>
+            <column name="departure_transportation_yn" type="string"/>
+            <column name="departure_comments" type="string"/>
+            <column name="cancellation_date" type="date"/>
+            <column name="guarantee_code" type="string"/>
+            <column name="wl_reason_description" type="string"/>
+            <column name="wl_reason_code" type="string"/>
+            <column name="wl_priority" type="string"/>
+            <column name="do_not_move_room" type="string"/>
+            <column name="external_reference" type="string"/>
+            <column name="party_code" type="string"/>
+            <column name="walkin_yn" type="string"/>
+            <column name="original_end_date" type="date"/>
+            <column name="approval_amount_calc_method" type="numeric"/>
+            <column name="amount_percent" type="numeric"/>
+            <column name="name_tax_type" type="string"/>
+            <column name="tax_exempt_no" type="string"/>
+            <column name="room_features" type="string"/>
+            <column name="wl_telephone_no" type="string"/>
+            <column name="video_checkout_yn" type="string"/>
+            <column name="discount_amt" type="numeric"/>
+            <column name="discount_prcnt" type="numeric"/>
+            <column name="discount_reason_code" type="string"/>
+            <column name="commission_paid" type="numeric"/>
+            <column name="commission_hold_code" type="string"/>
+            <column name="trunc_begin_date" type="date"/>
+            <column name="trunc_end_date" type="date"/>
+            <column name="sguest_name" type="string"/>
+            <column name="membership_id" type="numeric"/>
+            <column name="udfc_01" type="string"/>
+            <column name="udfc_02" type="string"/>
+            <column name="udfc_03" type="string"/>
+            <column name="udfc_04" type="string"/>
+            <column name="udfc_05" type="string"/>
+            <column name="udfc_06" type="string"/>
+            <column name="udfc_07" type="string"/>
+            <column name="udfc_08" type="string"/>
+            <column name="udfc_09" type="string"/>
+            <column name="udfc_10" type="string"/>
+            <column name="udfc_11" type="string"/>
+            <column name="udfc_12" type="string"/>
+            <column name="udfc_13" type="string"/>
+            <column name="udfc_14" type="string"/>
+            <column name="udfc_15" type="string"/>
+            <column name="udfc_16" type="string"/>
+            <column name="udfc_17" type="string"/>
+            <column name="udfc_18" type="string"/>
+            <column name="udfc_19" type="string"/>
+            <column name="udfc_20" type="string"/>
+            <column name="udfc_21" type="string"/>
+            <column name="udfc_22" type="string"/>
+            <column name="udfc_23" type="string"/>
+            <column name="udfc_24" type="string"/>
+            <column name="udfc_25" type="string"/>
+            <column name="udfc_26" type="string"/>
+            <column name="udfc_27" type="string"/>
+            <column name="udfc_28" type="string"/>
+            <column name="udfc_29" type="string"/>
+            <column name="udfc_30" type="string"/>
+            <column name="udfc_31" type="string"/>
+            <column name="udfc_32" type="string"/>
+            <column name="udfc_33" type="string"/>
+            <column name="udfc_34" type="string"/>
+            <column name="udfc_35" type="string"/>
+            <column name="udfc_36" type="string"/>
+            <column name="udfc_37" type="string"/>
+            <column name="udfc_38" type="string"/>
+            <column name="udfc_39" type="string"/>
+            <column name="udfc_40" type="string"/>
+            <column name="udfn_01" type="numeric"/>
+            <column name="udfn_02" type="numeric"/>
+            <column name="udfn_03" type="numeric"/>
+            <column name="udfn_04" type="numeric"/>
+            <column name="udfn_05" type="numeric"/>
+            <column name="udfn_06" type="numeric"/>
+            <column name="udfn_07" type="numeric"/>
+            <column name="udfn_08" type="numeric"/>
+            <column name="udfn_09" type="numeric"/>
+            <column name="udfn_10" type="numeric"/>
+            <column name="udfn_11" type="numeric"/>
+            <column name="udfn_12" type="numeric"/>
+            <column name="udfn_13" type="numeric"/>
+            <column name="udfn_14" type="numeric"/>
+            <column name="udfn_15" type="numeric"/>
+            <column name="udfn_16" type="numeric"/>
+            <column name="udfn_17" type="numeric"/>
+            <column name="udfn_18" type="numeric"/>
+            <column name="udfn_19" type="numeric"/>
+            <column name="udfn_20" type="numeric"/>
+            <column name="udfn_21" type="numeric"/>
+            <column name="udfn_22" type="numeric"/>
+            <column name="udfn_23" type="numeric"/>
+            <column name="udfn_24" type="numeric"/>
+            <column name="udfn_25" type="numeric"/>
+            <column name="udfn_26" type="numeric"/>
+            <column name="udfn_27" type="numeric"/>
+            <column name="udfn_28" type="numeric"/>
+            <column name="udfn_29" type="numeric"/>
+            <column name="udfn_30" type="numeric"/>
+            <column name="udfn_31" type="numeric"/>
+            <column name="udfn_32" type="numeric"/>
+            <column name="udfn_33" type="numeric"/>
+            <column name="udfn_34" type="numeric"/>
+            <column name="udfn_35" type="numeric"/>
+            <column name="udfn_36" type="numeric"/>
+            <column name="udfn_37" type="numeric"/>
+            <column name="udfn_38" type="numeric"/>
+            <column name="udfn_39" type="numeric"/>
+            <column name="udfn_40" type="numeric"/>
+            <column name="udfd_01" type="date"/>
+            <column name="udfd_02" type="date"/>
+            <column name="udfd_03" type="date"/>
+            <column name="udfd_04" type="date"/>
+            <column name="udfd_05" type="date"/>
+            <column name="udfd_06" type="date"/>
+            <column name="udfd_07" type="date"/>
+            <column name="udfd_08" type="date"/>
+            <column name="udfd_09" type="date"/>
+            <column name="udfd_10" type="date"/>
+            <column name="insert_action_instance_id" type="numeric"/>
+            <column name="dml_seq_no" type="numeric"/>
+            <column name="business_date_created" type="date"/>
+            <column name="turndown_yn" type="string"/>
+            <column name="room_instructions" type="string"/>
+            <column name="room_service_time" type="string"/>
+            <column name="event_id" type="numeric"/>
+            <column name="revenue_type_code" type="string"/>
+            <column name="hurdle" type="numeric"/>
+            <column name="hurdle_override" type="string"/>
+            <column name="rateable_value" type="numeric"/>
+            <column name="restriction_override" type="string"/>
+            <column name="yieldable_yn" type="string"/>
+            <column name="sguest_firstname" type="string"/>
+            <column name="guest_last_name" type="string"/>
+            <column name="guest_first_name" type="string"/>
+            <column name="guest_last_name_sdx" type="string"/>
+            <column name="guest_first_name_sdx" type="string"/>
+            <column name="channel" type="string"/>
+            <column name="share_seq_no" type="numeric"/>
+            <column name="guest_signature" type="string"/>
+            <column name="extension_id" type="numeric"/>
+            <column name="resv_contact_id" type="numeric"/>
+            <column name="billing_contact_id" type="numeric"/>
+            <column name="res_insert_source" type="string"/>
+            <column name="res_insert_source_type" type="string"/>
+            <column name="master_share" type="string"/>
+            <column name="registration_card_no" type="string"/>
+            <column name="tiad" type="string"/>
+            <column name="purpose_of_stay" type="string"/>
+            <column name="reinstate_date" type="date"/>
+            <column name="purge_date" type="date"/>
+            <column name="last_settle_date" type="date"/>
+            <column name="last_periodic_folio_date" type="date"/>
+            <column name="periodic_folio_freq" type="numeric"/>
+            <column name="confirmation_leg_no" type="numeric"/>
+            <column name="guest_status" type="string"/>
+            <column name="guest_type" type="string"/>
+            <column name="checkin_duration" type="numeric"/>
+            <column name="authorizer_id" type="numeric"/>
+            <column name="last_online_print_seq" type="numeric"/>
+            <column name="entry_point" type="string"/>
+            <column name="entry_date" type="date"/>
+            <column name="pseudo_mem_type" type="string"/>
+            <column name="pseudo_mem_total_points" type="numeric"/>
+            <column name="folio_text_1" type="string"/>
+            <column name="folio_text_2" type="string"/>
+            <column name="comp_type_code" type="string"/>
+            <column name="uni_card_id" type="string"/>
+            <column name="exp_checkinres_id" type="numeric"/>
+            <column name="original_begin_date" type="date"/>
+            <column name="owner_ff_flag" type="string"/>
+            <column name="commission_payout_to" type="string"/>
+            <column name="pre_charging_yn" type="string"/>
+            <column name="post_charging_yn" type="string"/>
+            <column name="post_co_flag" type="string"/>
+            <column name="folio_close_date" type="date"/>
+            <column name="schedule_checkout_yn" type="string"/>
+            <column name="custom_reference" type="string"/>
+            <column name="guarantee_code_pre_ci" type="string"/>
+            <column name="award_membership_id" type="numeric"/>
+            <column name="esigned_reg_card_name" type="string"/>
+            <column name="statistical_room_type" type="numeric"/>
+            <column name="statistical_rate_tier" type="numeric"/>
+            <column name="ym_code" type="string"/>
+            <column name="key_valid_until" type="date"/>
+            <column name="pre_registered_yn" type="string"/>
+            <column name="tax_registration_no" type="numeric"/>
+            <column name="visa_number" type="string"/>
+            <column name="visa_issue_date" type="date"/>
+            <column name="visa_expiration_date" type="date"/>
+            <column name="tax_no_of_stays" type="numeric"/>
+            <column name="asb_prorated_yn" type="string"/>
+            <column name="auto_settle_days" type="numeric"/>
+            <column name="auto_settle_yn" type="string"/>
+            <column name="split_from_resv_name_id" type="numeric"/>
+            <column name="next_destination" type="string"/>
+            <column name="date_of_arrival_in_country" type="date"/>
+            <column name="pre_arr_reviewed_dt" type="date"/>
+            <column name="pre_arr_reviewed_user" type="numeric"/>
+            <column name="bonus_check_id" type="numeric"/>
+            <column name="mobile_audio_key_yn" type="string"/>
+            <column name="direct_bill_verify_response" type="string"/>
+            <column name="addressee_name_id" type="numeric"/>
+            <column name="super_search_index_text" type="string"/>
+            <column name="auto_checkin_yn" type="string"/>
+            <column name="email_folio_yn" type="string"/>
+            <column name="email_address" type="string"/>
+            <column name="spg_upgrade_confirmed_roomtype" type="string"/>
+            <column name="spg_upgrade_reason_code" type="string"/>
+            <column name="spg_suite_night_award_status" type="string"/>
+            <column name="spg_disclose_room_type_yn" type="string"/>
+            <column name="amenity_eligible_yn" type="string"/>
+            <column name="amenity_level_code" type="string"/>
+            <column name="base_rate_currency_code" type="string"/>
+            <column name="base_rate_code" type="string"/>
+            <column name="local_base_rate_amount" type="numeric"/>
+            <column name="phone_display_name_yn" type="string"/>
+            <column name="resort_charge_number" type="string"/>
+            <column name="mobile_chkout_allowed" type="string"/>
+            <column name="mobile_view_folio_allowed" type="string"/>
+            <column name="hk_expected_service_time" type="string"/>
+            <column name="eligible_for_upgrade_yn" type="string"/>
+            <column name="begin_system_date_time" type="date"/>
+            <column name="mobile_checkin_allowed_yn" type="string"/>
+            <column name="quote_id" type="string"/>
+            <column name="manual_checkout_status" type="string"/>
+            <column name="mobile_preferred_currency" type="string"/>
+            <column name="mobile_action_alert_issued" type="date"/>
+            <column name="external_efolio_yn" type="string"/>
+            <column name="opt_in_batch_fol_yn" type="string"/>
+            <column name="folio_addr_element_id" type="numeric"/>
+            <column name="opera_esigned_reg_card_yn" type="string"/>
+            <column name="resv_guid" type="string"/>
+            <column name="advance_checked_in_yn" type="string"/>
+            <column name="expected_time_of_return" type="date"/>
+            <column name="etr_comments" type="string"/>
+            <column name="opted_for_comm_yn" type="string"/>
+            <column name="credit_limit_auto_pay_allow_yn" type="string"/>
+            <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
+        </loadData>
+    </changeSet>
+</databaseChangeLog>

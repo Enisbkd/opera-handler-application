@@ -1,0 +1,1161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <!--
+        Added the entity Name.
+    -->
+    <changeSet id="20240502082208-1" author="jhipster">
+        <createTable tableName="name">
+            <column name="id" type="integer">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="name_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="insert_user" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="insert_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="update_user" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="update_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="primary_name_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="repeat_guest_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="mail_list" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="mail_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="follow_on" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="business_title" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="inactive_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="arc_update_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="update_fax_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="birth_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="collection_user_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="company" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="sound_ex_company" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="legal_company" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="first" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="middle" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="last" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="nickname" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="title" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="sound_ex_last" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="external_reference_requ" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="vip_status" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="vip_authorization" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="billing_profile_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="rate_structure" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="name_comment" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tour_operator_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="region" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="type_of_1099" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tax_1_no" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="company_name_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="external_reference_required" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="vendor_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="vendor_site_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="arc_office_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tax_2_no" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="arc_mail_flag" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="name_2" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="name_3" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="salesrep" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tracecode" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="geographic_region" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="guest_classification" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="primary_address_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="primary_phone_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="tax_exempt_status" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="gds_name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="gds_transaction_no" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="nationality" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="language" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="salutation" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="passport" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="history_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="resv_contact" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="contract_no" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="contract_recv_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="acct_contact" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="priority" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="industry_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="rooms_potential" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="competition_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="jhi_scope" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="scope_city" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="territory" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="actioncode" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="active_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="master_account_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="name_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="sname" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="name_tax_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="sfirst" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ar_no" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="availability_override" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="billing_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="cash_bl_ind" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="bl_msg" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="currency_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="commission_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="hold_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="interest" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="summ_ref_cc" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="iata_comp_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="srep_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="accountsource" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="markets" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="product_interest" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="keyword" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="letter_greeting" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="influence" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="dept_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="department" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="contact_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="account_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="download_resort" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="download_srep" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="download_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="upload_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="laptop_change" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="crs_nameid" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="comm_pay_central" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="cc_profile_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="gender" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="birth_place" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="birth_country" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="profession" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="id_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="id_number" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="id_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="id_place" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="id_country" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_01" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_02" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_03" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_04" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_05" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_06" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_07" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_08" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_09" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_10" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_11" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_12" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_13" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_14" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_15" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_16" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_17" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_18" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_19" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_20" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_21" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_22" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_23" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_24" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_25" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_26" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_27" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_28" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_29" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_30" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_31" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_32" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_33" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_34" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_35" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_36" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_37" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_38" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_39" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfc_40" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_01" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_02" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_03" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_04" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_05" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_06" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_07" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_08" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_09" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_10" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_11" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_12" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_13" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_14" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_15" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_16" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_17" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_18" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_19" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_20" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_21" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_22" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_23" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_24" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_25" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_26" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_27" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_28" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_29" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_30" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_31" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_32" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_33" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_34" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_35" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_36" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_37" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_38" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_39" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfn_40" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfd_01" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfd_02" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfd_03" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfd_04" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfd_05" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfd_06" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfd_07" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfd_08" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfd_09" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfd_10" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfd_11" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfd_12" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfd_13" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfd_14" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfd_15" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfd_16" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfd_17" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfd_18" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfd_19" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="udfd_20" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="payment_due_days" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="suffix" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="external_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="guest_priv_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="email_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="mail_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="index_name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="xlast_name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="xfirst_name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="xcompany_name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="xtitle" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="xsalutation" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="sxname" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="sxfirst_name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="last_updated_resort" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="envelope_greeting" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="xenvelope_greeting" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="direct_bill_batch_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="resort_registered" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tax_office" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tax_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tax_category" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="preferred_room_no" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="phone_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="sms_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="is_protected" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="xlanguage" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="market_research_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="third_party_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="autoenroll_member_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="chain_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="company_group_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="include_in_1099_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="credit_rating" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="title_suffix" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="inactive_reason" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="iata_consortia" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="psuedo_profile_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="profile_privacy_flg" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="replace_address" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="alien_registration_no" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="immigration_status" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="visa_validity_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="id_document_attach_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="super_search_index_text" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="birth_date_str" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="orig_name_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="d_opt_in_mail_list_flg" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="d_opt_in_market_research_flg" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="d_opt_in_third_party_flg" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="d_opt_in_autoenroll_member_flg" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="d_opt_in_email_flg" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="d_opt_in_phone_flg" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="d_opt_in_sms_flg" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="d_opt_in_guest_priv_flg" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ar_credit_limit_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="profile_credit_limit" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="xmiddle_name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="e_invoice_liable_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="e_inv_liable_last_updated" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="internal_bill_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="comp_pre_approval_required_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="anonymization_status" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="anonymization_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
+        </createTable>
+    </changeSet>
+
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here -->
+
+    <!--
+        Load sample data generated with Faker.js
+        - This data can be easily edited using a CSV editor (or even MS Excel) and
+          is located in the 'src/main/resources/config/liquibase/fake-data' directory
+        - By default this data is applied when running with the JHipster 'dev' profile.
+          This can be customized by adding or removing 'faker' in the 'spring.liquibase.contexts'
+          Spring Boot configuration key.
+    -->
+    <changeSet id="20240502082208-1-data" author="jhipster" context="faker">
+        <loadData
+                  file="config/liquibase/fake-data/name.csv"
+                  separator=";"
+                  tableName="name"
+                  usePreparedStatements="true">
+            <column name="id" type="numeric"/>
+            <column name="name_id" type="numeric"/>
+            <column name="name_code" type="string"/>
+            <column name="insert_user" type="numeric"/>
+            <column name="insert_date" type="date"/>
+            <column name="update_user" type="numeric"/>
+            <column name="update_date" type="date"/>
+            <column name="primary_name_id" type="numeric"/>
+            <column name="repeat_guest_id" type="string"/>
+            <column name="mail_list" type="string"/>
+            <column name="mail_type" type="string"/>
+            <column name="follow_on" type="string"/>
+            <column name="business_title" type="string"/>
+            <column name="inactive_date" type="date"/>
+            <column name="arc_update_date" type="date"/>
+            <column name="update_fax_date" type="date"/>
+            <column name="birth_date" type="date"/>
+            <column name="collection_user_id" type="numeric"/>
+            <column name="company" type="string"/>
+            <column name="sound_ex_company" type="string"/>
+            <column name="legal_company" type="string"/>
+            <column name="first" type="string"/>
+            <column name="middle" type="string"/>
+            <column name="last" type="string"/>
+            <column name="nickname" type="string"/>
+            <column name="title" type="string"/>
+            <column name="sound_ex_last" type="string"/>
+            <column name="external_reference_requ" type="string"/>
+            <column name="vip_status" type="string"/>
+            <column name="vip_authorization" type="string"/>
+            <column name="billing_profile_code" type="string"/>
+            <column name="rate_structure" type="string"/>
+            <column name="name_comment" type="string"/>
+            <column name="tour_operator_type" type="string"/>
+            <column name="region" type="string"/>
+            <column name="type_of_1099" type="string"/>
+            <column name="tax_1_no" type="string"/>
+            <column name="company_name_id" type="numeric"/>
+            <column name="external_reference_required" type="string"/>
+            <column name="vendor_id" type="numeric"/>
+            <column name="vendor_site_id" type="numeric"/>
+            <column name="arc_office_type" type="string"/>
+            <column name="tax_2_no" type="string"/>
+            <column name="arc_mail_flag" type="string"/>
+            <column name="name_2" type="string"/>
+            <column name="name_3" type="string"/>
+            <column name="salesrep" type="string"/>
+            <column name="tracecode" type="string"/>
+            <column name="geographic_region" type="string"/>
+            <column name="guest_classification" type="string"/>
+            <column name="primary_address_id" type="numeric"/>
+            <column name="primary_phone_id" type="numeric"/>
+            <column name="tax_exempt_status" type="string"/>
+            <column name="gds_name" type="string"/>
+            <column name="gds_transaction_no" type="string"/>
+            <column name="nationality" type="string"/>
+            <column name="language" type="string"/>
+            <column name="salutation" type="string"/>
+            <column name="passport" type="string"/>
+            <column name="history_yn" type="string"/>
+            <column name="resv_contact" type="string"/>
+            <column name="contract_no" type="string"/>
+            <column name="contract_recv_date" type="date"/>
+            <column name="acct_contact" type="string"/>
+            <column name="priority" type="string"/>
+            <column name="industry_code" type="string"/>
+            <column name="rooms_potential" type="string"/>
+            <column name="competition_code" type="string"/>
+            <column name="jhi_scope" type="string"/>
+            <column name="scope_city" type="string"/>
+            <column name="territory" type="string"/>
+            <column name="actioncode" type="string"/>
+            <column name="active_yn" type="string"/>
+            <column name="master_account_yn" type="string"/>
+            <column name="name_type" type="string"/>
+            <column name="sname" type="string"/>
+            <column name="name_tax_type" type="string"/>
+            <column name="sfirst" type="string"/>
+            <column name="ar_no" type="string"/>
+            <column name="availability_override" type="string"/>
+            <column name="billing_code" type="string"/>
+            <column name="cash_bl_ind" type="string"/>
+            <column name="bl_msg" type="string"/>
+            <column name="currency_code" type="string"/>
+            <column name="commission_code" type="string"/>
+            <column name="hold_code" type="string"/>
+            <column name="interest" type="string"/>
+            <column name="summ_ref_cc" type="string"/>
+            <column name="iata_comp_type" type="string"/>
+            <column name="srep_code" type="string"/>
+            <column name="accountsource" type="string"/>
+            <column name="markets" type="string"/>
+            <column name="product_interest" type="string"/>
+            <column name="keyword" type="string"/>
+            <column name="letter_greeting" type="string"/>
+            <column name="influence" type="string"/>
+            <column name="dept_id" type="string"/>
+            <column name="department" type="string"/>
+            <column name="contact_yn" type="string"/>
+            <column name="account_type" type="string"/>
+            <column name="download_resort" type="string"/>
+            <column name="download_srep" type="numeric"/>
+            <column name="download_date" type="date"/>
+            <column name="upload_date" type="date"/>
+            <column name="laptop_change" type="numeric"/>
+            <column name="crs_nameid" type="numeric"/>
+            <column name="comm_pay_central" type="string"/>
+            <column name="cc_profile_yn" type="string"/>
+            <column name="gender" type="string"/>
+            <column name="birth_place" type="string"/>
+            <column name="birth_country" type="string"/>
+            <column name="profession" type="string"/>
+            <column name="id_type" type="string"/>
+            <column name="id_number" type="string"/>
+            <column name="id_date" type="date"/>
+            <column name="id_place" type="string"/>
+            <column name="id_country" type="string"/>
+            <column name="udfc_01" type="string"/>
+            <column name="udfc_02" type="string"/>
+            <column name="udfc_03" type="string"/>
+            <column name="udfc_04" type="string"/>
+            <column name="udfc_05" type="string"/>
+            <column name="udfc_06" type="string"/>
+            <column name="udfc_07" type="string"/>
+            <column name="udfc_08" type="string"/>
+            <column name="udfc_09" type="string"/>
+            <column name="udfc_10" type="string"/>
+            <column name="udfc_11" type="string"/>
+            <column name="udfc_12" type="string"/>
+            <column name="udfc_13" type="string"/>
+            <column name="udfc_14" type="string"/>
+            <column name="udfc_15" type="string"/>
+            <column name="udfc_16" type="string"/>
+            <column name="udfc_17" type="string"/>
+            <column name="udfc_18" type="string"/>
+            <column name="udfc_19" type="string"/>
+            <column name="udfc_20" type="string"/>
+            <column name="udfc_21" type="string"/>
+            <column name="udfc_22" type="string"/>
+            <column name="udfc_23" type="string"/>
+            <column name="udfc_24" type="string"/>
+            <column name="udfc_25" type="string"/>
+            <column name="udfc_26" type="string"/>
+            <column name="udfc_27" type="string"/>
+            <column name="udfc_28" type="string"/>
+            <column name="udfc_29" type="string"/>
+            <column name="udfc_30" type="string"/>
+            <column name="udfc_31" type="string"/>
+            <column name="udfc_32" type="string"/>
+            <column name="udfc_33" type="string"/>
+            <column name="udfc_34" type="string"/>
+            <column name="udfc_35" type="string"/>
+            <column name="udfc_36" type="string"/>
+            <column name="udfc_37" type="string"/>
+            <column name="udfc_38" type="string"/>
+            <column name="udfc_39" type="string"/>
+            <column name="udfc_40" type="string"/>
+            <column name="udfn_01" type="numeric"/>
+            <column name="udfn_02" type="numeric"/>
+            <column name="udfn_03" type="numeric"/>
+            <column name="udfn_04" type="numeric"/>
+            <column name="udfn_05" type="numeric"/>
+            <column name="udfn_06" type="numeric"/>
+            <column name="udfn_07" type="numeric"/>
+            <column name="udfn_08" type="numeric"/>
+            <column name="udfn_09" type="numeric"/>
+            <column name="udfn_10" type="numeric"/>
+            <column name="udfn_11" type="numeric"/>
+            <column name="udfn_12" type="numeric"/>
+            <column name="udfn_13" type="numeric"/>
+            <column name="udfn_14" type="numeric"/>
+            <column name="udfn_15" type="numeric"/>
+            <column name="udfn_16" type="numeric"/>
+            <column name="udfn_17" type="numeric"/>
+            <column name="udfn_18" type="numeric"/>
+            <column name="udfn_19" type="numeric"/>
+            <column name="udfn_20" type="numeric"/>
+            <column name="udfn_21" type="numeric"/>
+            <column name="udfn_22" type="numeric"/>
+            <column name="udfn_23" type="numeric"/>
+            <column name="udfn_24" type="numeric"/>
+            <column name="udfn_25" type="numeric"/>
+            <column name="udfn_26" type="numeric"/>
+            <column name="udfn_27" type="numeric"/>
+            <column name="udfn_28" type="numeric"/>
+            <column name="udfn_29" type="numeric"/>
+            <column name="udfn_30" type="numeric"/>
+            <column name="udfn_31" type="numeric"/>
+            <column name="udfn_32" type="numeric"/>
+            <column name="udfn_33" type="numeric"/>
+            <column name="udfn_34" type="numeric"/>
+            <column name="udfn_35" type="numeric"/>
+            <column name="udfn_36" type="numeric"/>
+            <column name="udfn_37" type="numeric"/>
+            <column name="udfn_38" type="numeric"/>
+            <column name="udfn_39" type="numeric"/>
+            <column name="udfn_40" type="numeric"/>
+            <column name="udfd_01" type="date"/>
+            <column name="udfd_02" type="date"/>
+            <column name="udfd_03" type="date"/>
+            <column name="udfd_04" type="date"/>
+            <column name="udfd_05" type="date"/>
+            <column name="udfd_06" type="date"/>
+            <column name="udfd_07" type="date"/>
+            <column name="udfd_08" type="date"/>
+            <column name="udfd_09" type="date"/>
+            <column name="udfd_10" type="date"/>
+            <column name="udfd_11" type="date"/>
+            <column name="udfd_12" type="date"/>
+            <column name="udfd_13" type="date"/>
+            <column name="udfd_14" type="date"/>
+            <column name="udfd_15" type="date"/>
+            <column name="udfd_16" type="date"/>
+            <column name="udfd_17" type="date"/>
+            <column name="udfd_18" type="date"/>
+            <column name="udfd_19" type="date"/>
+            <column name="udfd_20" type="date"/>
+            <column name="payment_due_days" type="numeric"/>
+            <column name="suffix" type="string"/>
+            <column name="external_id" type="string"/>
+            <column name="guest_priv_yn" type="string"/>
+            <column name="email_yn" type="string"/>
+            <column name="mail_yn" type="string"/>
+            <column name="index_name" type="string"/>
+            <column name="xlast_name" type="string"/>
+            <column name="xfirst_name" type="string"/>
+            <column name="xcompany_name" type="string"/>
+            <column name="xtitle" type="string"/>
+            <column name="xsalutation" type="string"/>
+            <column name="sxname" type="string"/>
+            <column name="sxfirst_name" type="string"/>
+            <column name="last_updated_resort" type="string"/>
+            <column name="envelope_greeting" type="string"/>
+            <column name="xenvelope_greeting" type="string"/>
+            <column name="direct_bill_batch_type" type="string"/>
+            <column name="resort_registered" type="string"/>
+            <column name="tax_office" type="string"/>
+            <column name="tax_type" type="string"/>
+            <column name="tax_category" type="string"/>
+            <column name="preferred_room_no" type="string"/>
+            <column name="phone_yn" type="string"/>
+            <column name="sms_yn" type="string"/>
+            <column name="is_protected" type="string"/>
+            <column name="xlanguage" type="string"/>
+            <column name="market_research_yn" type="string"/>
+            <column name="third_party_yn" type="string"/>
+            <column name="autoenroll_member_yn" type="string"/>
+            <column name="chain_code" type="string"/>
+            <column name="company_group_id" type="string"/>
+            <column name="include_in_1099_yn" type="string"/>
+            <column name="credit_rating" type="string"/>
+            <column name="title_suffix" type="numeric"/>
+            <column name="inactive_reason" type="string"/>
+            <column name="iata_consortia" type="string"/>
+            <column name="psuedo_profile_yn" type="string"/>
+            <column name="profile_privacy_flg" type="string"/>
+            <column name="replace_address" type="string"/>
+            <column name="alien_registration_no" type="string"/>
+            <column name="immigration_status" type="string"/>
+            <column name="visa_validity_type" type="string"/>
+            <column name="id_document_attach_id" type="numeric"/>
+            <column name="super_search_index_text" type="string"/>
+            <column name="birth_date_str" type="string"/>
+            <column name="orig_name_id" type="numeric"/>
+            <column name="d_opt_in_mail_list_flg" type="string"/>
+            <column name="d_opt_in_market_research_flg" type="string"/>
+            <column name="d_opt_in_third_party_flg" type="string"/>
+            <column name="d_opt_in_autoenroll_member_flg" type="string"/>
+            <column name="d_opt_in_email_flg" type="string"/>
+            <column name="d_opt_in_phone_flg" type="string"/>
+            <column name="d_opt_in_sms_flg" type="string"/>
+            <column name="d_opt_in_guest_priv_flg" type="string"/>
+            <column name="ar_credit_limit_yn" type="string"/>
+            <column name="profile_credit_limit" type="numeric"/>
+            <column name="xmiddle_name" type="string"/>
+            <column name="e_invoice_liable_yn" type="string"/>
+            <column name="e_inv_liable_last_updated" type="date"/>
+            <column name="internal_bill_yn" type="string"/>
+            <column name="comp_pre_approval_required_yn" type="string"/>
+            <column name="anonymization_status" type="string"/>
+            <column name="anonymization_date" type="date"/>
+            <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
+        </loadData>
+    </changeSet>
+</databaseChangeLog>

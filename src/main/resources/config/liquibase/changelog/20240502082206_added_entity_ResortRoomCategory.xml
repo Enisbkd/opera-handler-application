@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <!--
+        Added the entity ResortRoomCategory.
+    -->
+    <changeSet id="20240502082206-1" author="jhipster">
+        <createTable tableName="resort_room_category">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="resort" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="room_category" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="room_class" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="number_rooms" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="short_description" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="long_description" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="compiled" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="psuedo_room_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="active_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="inactive_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="replaces_category" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="order_by" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="max_occupancy" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="max_rollaways" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="rate_category" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="jhi_label" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="generic_flag" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="suite_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="meetingroom_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="insert_user" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="insert_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="update_user" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="update_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="rate_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="rate_amount" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="def_occupancy" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="image_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="pseudo_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="send_to_interface_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="yieldable_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="yield_category" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="housekeeping" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="can_delete_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="roominfo_url" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="owner_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="auto_include_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="initial_round_up" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="increments" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="rotation_group" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="sales_flag" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="auto_room_assign_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="upsell_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="orms_upsell_rank" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="orms_upsell_amt" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="orms_drxtra_adult" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="orms_drxtra_child" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="max_occupancy_adults" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="max_occupancy_children" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="room_pool" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="member_award_room_grp" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="orms_drxtra_2nd_adult" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="orms_drtier_1" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="orms_drtier_2" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="orms_drtier_3" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="auto_checkin_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="rate_floor" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="max_fix_bed_occupancy" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="maintenance_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="smoking_preference" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="s_label" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="s_bedtype" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="sell_thru_rule_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="crs_description" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="evisitor_facility_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="min_occupancy" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="accessible_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
+        </createTable>
+    </changeSet>
+
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here -->
+
+    <!--
+        Load sample data generated with Faker.js
+        - This data can be easily edited using a CSV editor (or even MS Excel) and
+          is located in the 'src/main/resources/config/liquibase/fake-data' directory
+        - By default this data is applied when running with the JHipster 'dev' profile.
+          This can be customized by adding or removing 'faker' in the 'spring.liquibase.contexts'
+          Spring Boot configuration key.
+    -->
+    <changeSet id="20240502082206-1-data" author="jhipster" context="faker">
+        <loadData
+                  file="config/liquibase/fake-data/resort_room_category.csv"
+                  separator=";"
+                  tableName="resort_room_category"
+                  usePreparedStatements="true">
+            <column name="id" type="numeric"/>
+            <column name="resort" type="string"/>
+            <column name="room_category" type="string"/>
+            <column name="room_class" type="string"/>
+            <column name="number_rooms" type="numeric"/>
+            <column name="short_description" type="string"/>
+            <column name="long_description" type="string"/>
+            <column name="compiled" type="string"/>
+            <column name="psuedo_room_type" type="string"/>
+            <column name="active_date" type="date"/>
+            <column name="inactive_date" type="date"/>
+            <column name="replaces_category" type="string"/>
+            <column name="order_by" type="numeric"/>
+            <column name="max_occupancy" type="numeric"/>
+            <column name="max_rollaways" type="numeric"/>
+            <column name="rate_category" type="string"/>
+            <column name="jhi_label" type="string"/>
+            <column name="generic_flag" type="string"/>
+            <column name="suite_yn" type="string"/>
+            <column name="meetingroom_yn" type="string"/>
+            <column name="insert_user" type="numeric"/>
+            <column name="insert_date" type="date"/>
+            <column name="update_user" type="numeric"/>
+            <column name="update_date" type="date"/>
+            <column name="rate_code" type="string"/>
+            <column name="rate_amount" type="numeric"/>
+            <column name="def_occupancy" type="numeric"/>
+            <column name="image_id" type="numeric"/>
+            <column name="pseudo_yn" type="string"/>
+            <column name="send_to_interface_yn" type="string"/>
+            <column name="yieldable_yn" type="string"/>
+            <column name="yield_category" type="string"/>
+            <column name="housekeeping" type="string"/>
+            <column name="can_delete_yn" type="string"/>
+            <column name="roominfo_url" type="string"/>
+            <column name="owner_yn" type="string"/>
+            <column name="auto_include_yn" type="string"/>
+            <column name="initial_round_up" type="numeric"/>
+            <column name="increments" type="numeric"/>
+            <column name="rotation_group" type="string"/>
+            <column name="sales_flag" type="string"/>
+            <column name="auto_room_assign_yn" type="string"/>
+            <column name="upsell_yn" type="string"/>
+            <column name="orms_upsell_rank" type="numeric"/>
+            <column name="orms_upsell_amt" type="numeric"/>
+            <column name="orms_drxtra_adult" type="numeric"/>
+            <column name="orms_drxtra_child" type="numeric"/>
+            <column name="max_occupancy_adults" type="numeric"/>
+            <column name="max_occupancy_children" type="numeric"/>
+            <column name="room_pool" type="string"/>
+            <column name="member_award_room_grp" type="string"/>
+            <column name="orms_drxtra_2nd_adult" type="numeric"/>
+            <column name="orms_drtier_1" type="numeric"/>
+            <column name="orms_drtier_2" type="numeric"/>
+            <column name="orms_drtier_3" type="numeric"/>
+            <column name="auto_checkin_yn" type="string"/>
+            <column name="rate_floor" type="numeric"/>
+            <column name="max_fix_bed_occupancy" type="numeric"/>
+            <column name="maintenance_yn" type="string"/>
+            <column name="smoking_preference" type="string"/>
+            <column name="s_label" type="string"/>
+            <column name="s_bedtype" type="string"/>
+            <column name="sell_thru_rule_yn" type="string"/>
+            <column name="crs_description" type="string"/>
+            <column name="evisitor_facility_id" type="string"/>
+            <column name="min_occupancy" type="numeric"/>
+            <column name="accessible_yn" type="string"/>
+            <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
+        </loadData>
+    </changeSet>
+</databaseChangeLog>

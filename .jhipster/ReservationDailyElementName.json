@@ -1,0 +1,281 @@
+{
+  "annotations": {
+    "changelogDate": "20240502082202"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "resort",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "resvNameId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "reservationDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "resvDailyElSeq",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "travelAgentId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "companyId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "sourceId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "groupId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "sharePaymentType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "shareAmount",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "sharePrcnt",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "adults",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "children",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "discountAmt",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "discountPrcnt",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "discountReasonCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fixedRateYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "baseRateAmount",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "autoPostAmount",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "sharePriority",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "insertUser",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "insertDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "updateUser",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "updateDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "lastShareCalculation",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "insertActionInstanceId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "dmlSeqNo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "netRoomAmt",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "roomTax",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "pkgAmt",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "pkgTax",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "grossRateAmt",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "adultsTaxFree",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "childrenTaxFree",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "children1",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "children2",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "children3",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "rateCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "currencyCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "exchangePostingType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "membershipPoints",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "children4",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "children5",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "commissionCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "awardCode1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "awardCode2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "awardCode3",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "awardCode4",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "awardCode5",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "awardVoucher1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "awardVoucher2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "awardVoucher3",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "awardVoucher4",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "awardVoucher5",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "doNotMoveYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "awardCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "points",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "upsellCharge",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "pointsEligibilityCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "commissionPaid",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "resvContactId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "billingContactId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "shareAmountOriginal",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "referralYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "bxgyDiscountYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "commissionableYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "basedOnRule",
+      "fieldType": "String"
+    }
+  ],
+  "name": "ReservationDailyElementName",
+  "pagination": "pagination",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

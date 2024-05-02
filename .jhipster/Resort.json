@@ -1,0 +1,969 @@
+{
+  "annotations": {
+    "changelogDate": "20240502082204"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "resort",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "beginDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "checkInTime",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "checkOutTime",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "videoCoStart",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "videoCoStop",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "insertDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "updateDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "expiryDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "endDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "fiscalStartDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "fiscalEndDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "reconcileDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "paymentDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "keepAvailability",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "budgetMonth",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "saveProfiles",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "longStayControl",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "creditLimit",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "numberRooms",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "numberFloors",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "numberBeds",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "rhythmSheets",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "rhythmTowels",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "warningAmount",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "decimalPlaces",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "font",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "copies",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "defaultFolioStyle",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "individualRoomWarning",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "groupRoomWarning",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "agingLevel1",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "agingLevel2",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "agingLevel3",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "agingLevel4",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "agingLevel5",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "zeroInvPurDays",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "minDaysBet2ReminderLetter",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "insertUser",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "updateUser",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "currencyDecimals",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "nameIdLink",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "sglRate1",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "sglRate2",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "dblRate1",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "dblRate2",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "tplRate1",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "tplRate2",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "suiRate1",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "suiRate2",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "meetSpace",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "imgHotelId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "imgDirectionId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "imgMapId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "scriptId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "comNameXrefId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "pathId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "xresortNumber",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "maxCreditDays",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "currencyDivisor",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "latitude",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "longitude",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "qtySingleRooms",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "qtyDoubleRooms",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "qtyTwinRooms",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "qtySuites",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "qtyGuestRoomFloors",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "qtyGuestElevators",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "qtyNonSmokingRooms",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "qtyConnectingRooms",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "qtyHandicappedRooms",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "qtyFamilyRooms",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "maxAdultsFamilyRoom",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "maxChildrenFamilyRoom",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "restaurant",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "meetRooms",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "totRooms",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "brSeats",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "meetSeats",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "maxNoNights",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "awardsTimeout",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "guestLookupTimeout",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "wakeUpDelay",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "maxOccupancy",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "inactiveDaysForGuestProfil",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "perReservationRoomLimit",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "licRoomInfo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "thousandSeparator",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateSeparator",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "arAcctNoMandYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "exchangePostingType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "inventoryYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "allowLoginYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accessCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "disableLoginYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "intTaxIncludedYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "downloadRestYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "translateMulticharYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "externalScYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sendLeadAsBookingYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mbsSupportedYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "quotedCurrency",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "comMethod",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "genmgr",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dirsales",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "leadsend",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "airport",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "comAddress",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "season1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "season2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "season3",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "season4",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "season5",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "floorNumExecutiveFloor",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "crsResort",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "postCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "defaultReservationType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "block",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "currencySymbol",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sourceCommission",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "taCommission",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "baseLanguage",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "folioLanguage1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "folioLanguage2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "folioLanguage3",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "folioLanguage4",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "packageProfit",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "packageLoss",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "decimalSeparator",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "shortDateFormat",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "longDateFormat",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "passerbySource",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "passerbyMarket",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "arCompany",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "arAgent",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "arGroups",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "arIndividuals",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "arAcctNoFormat",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "allowancePeriodAdj",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "currencyCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "turnawayCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "summCurrencyCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "defaultPropertyAddress",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "defaultGuestAddress",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "licenseCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "timeFormat",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "chainCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "resortType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "hotelType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ownership",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "arBalTrxCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "arCreditTrxCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "arSettleCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cashShiftDrop",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "checkExgPaidout",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "checkShiftDrop",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "checkTrxcode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "currencyExgPaidout",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "depositLedTrxCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fiscalPeriodType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "defaultCommissionPercentage",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "defaultPrepaidComm",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "defaultTrxCommCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "configurationMode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "weekendDays",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "defaultGroupsRateCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "defaultPostingRoom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dfltPkgTranCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dfltTranCodeRateCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "defaultRateCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "croCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "flowCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "extPropertyCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "opusCurrencyCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "destinationId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "flags",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "touristNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cateringCurrencyCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "defaultRatecodeRack",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "defaultRatecodePcr",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fnsTier",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "brandCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "webaddress",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "vatId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "street",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "hotelFc",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "meetingFc",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "arTypewriter",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fileTransferFormat",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "confirmRegcardPrinter",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "directions",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "propinfoUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "roomAmenity",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "shopDescription",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "propPicUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "propMapUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "extExpFileLocation",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "curtainColor",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "countryCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "state",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateForAging",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "regionCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "city",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "telephone",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fax",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tollfree",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "defaultPrinter",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "videocheckoutPrinter",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "companyAddressType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "companyPhoneType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "defaultFaxType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "defaultMembershipType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "individualAddressType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "individualPhoneType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "notes",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "blackoutPeriodNotes",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sglNum",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dblNum",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tplNum",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "suiNum",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "airportDistance",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "airportTime",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "brArea",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "legalOwner",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "hotelId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "faxNoFormat",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "telephoneNoFormat",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "localCurrencyFormat",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dutyManagerPager",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "defaultRegistrationCard",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nightAuditCashierId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "hotelCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "path",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "timezoneRegion",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cateringCurrencyFormat",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "expHotelCode",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Resort",
+  "pagination": "pagination",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

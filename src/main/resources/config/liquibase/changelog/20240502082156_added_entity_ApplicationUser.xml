@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <!--
+        Added the entity ApplicationUser.
+    -->
+    <changeSet id="20240502082156-1" author="jhipster">
+        <createTable tableName="application_user">
+            <column name="id" type="integer">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="app_user_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="app_user" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="app_password" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="insert_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="insert_user" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="update_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="update_user" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="oracle_uid" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="oracle_user" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="oracle_password" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="inactive_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="title" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="default_form" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="app_user_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="last_logged_resort" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="def_cashier_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="app_user_description" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="person_name_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="disabled_until" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="expires_on" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="last_logged_timestamp" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="is_superuser" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="employee_number" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="general_filepath" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="user_filepath" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="default_resort" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="max_user_sessions" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="internal_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="max_checkout_days" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="default_terminal" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="default_language" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="dept_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="male_female" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="user_pbx_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="date_hired" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="work_permit_no" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="work_permit_expdate" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="rate_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="salary_interval" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="hourly_rate" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="weekly_salary" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="ot_multiplier" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="hire_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="rehire_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="emp_extension" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="emp_pager" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="term_reason" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="terminated_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="inactive_reason_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="inactive_from" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="inactive_to" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="week_min" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="week_max" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="monday_min" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="monday_max" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="tuesday_min" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="tuesday_max" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="wednesday_min" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="wednesday_max" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="thursday_min" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="thursday_max" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="friday_min" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="friday_max" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="saturday_min" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="saturday_max" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="sunday_min" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="sunday_max" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="comments" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="lead_address" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="lead_comm" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="lead_address_det" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="laptop_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="hours_per_week" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="emp_status" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="password_last_change" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="password_change_days" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="grace_login" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="srep_group" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="default_reportgroup" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="authorizer_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="authorizer_inactive_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="sfa_name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="login_cro" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="authorizer_rate_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="login_domain" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="receive_broadcast_msg" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="default_mfn_resort" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="mfn_user_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="force_password_change_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="account_locked_out_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="prevent_account_lockout" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="lockout_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="access_pms" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="access_sc" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="access_config" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="access_eod" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="access_util" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="access_ors" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="access_sfa" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="access_ocis" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="access_ocm" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="access_oxi" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="access_oxihub" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="chain_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="app_user_uniq" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="max_days_after_co" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="user_group_admin" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="access_orms" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="access_obi" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="srep_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="login_attempts" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="property_access_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="access_scbi" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="timezone_region" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="access_ocrm" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="employee_incentive_number" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="service_request_alerts_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="mobile_alerts_yn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
+        </createTable>
+    </changeSet>
+
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here -->
+
+    <!--
+        Load sample data generated with Faker.js
+        - This data can be easily edited using a CSV editor (or even MS Excel) and
+          is located in the 'src/main/resources/config/liquibase/fake-data' directory
+        - By default this data is applied when running with the JHipster 'dev' profile.
+          This can be customized by adding or removing 'faker' in the 'spring.liquibase.contexts'
+          Spring Boot configuration key.
+    -->
+    <changeSet id="20240502082156-1-data" author="jhipster" context="faker">
+        <loadData
+                  file="config/liquibase/fake-data/application_user.csv"
+                  separator=";"
+                  tableName="application_user"
+                  usePreparedStatements="true">
+            <column name="id" type="numeric"/>
+            <column name="app_user_id" type="numeric"/>
+            <column name="app_user" type="string"/>
+            <column name="app_password" type="string"/>
+            <column name="insert_date" type="date"/>
+            <column name="insert_user" type="numeric"/>
+            <column name="update_date" type="date"/>
+            <column name="update_user" type="numeric"/>
+            <column name="oracle_uid" type="numeric"/>
+            <column name="oracle_user" type="string"/>
+            <column name="oracle_password" type="string"/>
+            <column name="inactive_date" type="date"/>
+            <column name="title" type="string"/>
+            <column name="default_form" type="string"/>
+            <column name="name" type="string"/>
+            <column name="app_user_type" type="string"/>
+            <column name="last_logged_resort" type="string"/>
+            <column name="def_cashier_id" type="numeric"/>
+            <column name="app_user_description" type="string"/>
+            <column name="person_name_id" type="numeric"/>
+            <column name="disabled_until" type="date"/>
+            <column name="expires_on" type="date"/>
+            <column name="last_logged_timestamp" type="date"/>
+            <column name="is_superuser" type="string"/>
+            <column name="employee_number" type="string"/>
+            <column name="general_filepath" type="string"/>
+            <column name="user_filepath" type="string"/>
+            <column name="default_resort" type="string"/>
+            <column name="max_user_sessions" type="numeric"/>
+            <column name="internal_yn" type="string"/>
+            <column name="max_checkout_days" type="numeric"/>
+            <column name="default_terminal" type="string"/>
+            <column name="default_language" type="string"/>
+            <column name="dept_id" type="string"/>
+            <column name="male_female" type="string"/>
+            <column name="user_pbx_id" type="numeric"/>
+            <column name="date_hired" type="date"/>
+            <column name="work_permit_no" type="string"/>
+            <column name="work_permit_expdate" type="date"/>
+            <column name="rate_type" type="string"/>
+            <column name="salary_interval" type="string"/>
+            <column name="hourly_rate" type="numeric"/>
+            <column name="weekly_salary" type="numeric"/>
+            <column name="ot_multiplier" type="numeric"/>
+            <column name="hire_type" type="string"/>
+            <column name="rehire_yn" type="string"/>
+            <column name="emp_extension" type="string"/>
+            <column name="emp_pager" type="string"/>
+            <column name="term_reason" type="string"/>
+            <column name="terminated_date" type="date"/>
+            <column name="inactive_reason_code" type="string"/>
+            <column name="inactive_from" type="date"/>
+            <column name="inactive_to" type="date"/>
+            <column name="week_min" type="numeric"/>
+            <column name="week_max" type="numeric"/>
+            <column name="monday_min" type="numeric"/>
+            <column name="monday_max" type="numeric"/>
+            <column name="tuesday_min" type="numeric"/>
+            <column name="tuesday_max" type="numeric"/>
+            <column name="wednesday_min" type="numeric"/>
+            <column name="wednesday_max" type="numeric"/>
+            <column name="thursday_min" type="numeric"/>
+            <column name="thursday_max" type="numeric"/>
+            <column name="friday_min" type="numeric"/>
+            <column name="friday_max" type="numeric"/>
+            <column name="saturday_min" type="numeric"/>
+            <column name="saturday_max" type="numeric"/>
+            <column name="sunday_min" type="numeric"/>
+            <column name="sunday_max" type="numeric"/>
+            <column name="comments" type="string"/>
+            <column name="lead_address" type="string"/>
+            <column name="lead_comm" type="string"/>
+            <column name="lead_address_det" type="string"/>
+            <column name="laptop_id" type="numeric"/>
+            <column name="hours_per_week" type="numeric"/>
+            <column name="emp_status" type="string"/>
+            <column name="password_last_change" type="date"/>
+            <column name="password_change_days" type="numeric"/>
+            <column name="grace_login" type="numeric"/>
+            <column name="srep_group" type="string"/>
+            <column name="default_reportgroup" type="string"/>
+            <column name="authorizer_yn" type="string"/>
+            <column name="authorizer_inactive_date" type="date"/>
+            <column name="sfa_name" type="string"/>
+            <column name="login_cro" type="string"/>
+            <column name="authorizer_rate_code" type="string"/>
+            <column name="login_domain" type="string"/>
+            <column name="receive_broadcast_msg" type="string"/>
+            <column name="default_mfn_resort" type="string"/>
+            <column name="mfn_user_type" type="string"/>
+            <column name="force_password_change_yn" type="string"/>
+            <column name="account_locked_out_yn" type="string"/>
+            <column name="prevent_account_lockout" type="string"/>
+            <column name="lockout_date" type="date"/>
+            <column name="access_pms" type="string"/>
+            <column name="access_sc" type="string"/>
+            <column name="access_config" type="string"/>
+            <column name="access_eod" type="string"/>
+            <column name="access_util" type="string"/>
+            <column name="access_ors" type="string"/>
+            <column name="access_sfa" type="string"/>
+            <column name="access_ocis" type="string"/>
+            <column name="access_ocm" type="string"/>
+            <column name="access_oxi" type="string"/>
+            <column name="access_oxihub" type="string"/>
+            <column name="chain_code" type="string"/>
+            <column name="app_user_uniq" type="string"/>
+            <column name="max_days_after_co" type="numeric"/>
+            <column name="user_group_admin" type="string"/>
+            <column name="access_orms" type="string"/>
+            <column name="access_obi" type="string"/>
+            <column name="srep_code" type="string"/>
+            <column name="login_attempts" type="numeric"/>
+            <column name="property_access_yn" type="string"/>
+            <column name="access_scbi" type="string"/>
+            <column name="timezone_region" type="string"/>
+            <column name="access_ocrm" type="string"/>
+            <column name="employee_incentive_number" type="string"/>
+            <column name="service_request_alerts_yn" type="string"/>
+            <column name="mobile_alerts_yn" type="string"/>
+            <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
+        </loadData>
+    </changeSet>
+</databaseChangeLog>
